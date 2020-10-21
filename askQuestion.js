@@ -33,7 +33,7 @@ document.getElementById("form-btn").addEventListener("click", () => {
   let message = {
     subject: "",
     content: "",
-  };
+  };  
 
   message.subject = subject.value;
   message.content = textBox.value;
