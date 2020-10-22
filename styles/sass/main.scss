@@ -2,4 +2,95 @@
 
 // This will be the overall styling for desktop etc
 
+// events
+.events {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url("../../assets/gray-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 6rem;
+  &__header {
+    padding: 1rem 0;
+    // border: solid red;
+    h1 {
+      text-transform: uppercase;
+      max-width: 85%;
+      margin: 0 auto;
+      font-size: 2.5rem;
+      color: darkgray;
+      span:first-of-type {
+        color: orange;
+      }
+      span:last-of-type {
+        color: red;
+      }
+    }
+  }
+  &__details {
+    min-height: 90vh;
+    max-width: 80%;
+    margin: 0 auto;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 3rem;
+  }
+  &__list {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.5rem 1.2rem;
+  }
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2.5rem;
+    padding-bottom: 1.5rem;
+    &:not(:last-of-type) {
+      position: relative;
+    }
+    &:not(:last-of-type)::after {
+      content: "";
+      position: absolute;
+      transform: translate(-50%, -50%);
+      bottom: 0;
+      left: 50%;
+      display: block;
+      margin: 0 auto;
+      width: 80%;
+      border-bottom: 2px solid brown;
+    }
+    &-icon {
+      font-size: 3.5rem;
+    }
+    &-details {
+      h2 {
+        text-transform: capitalize;
+        font-weight: 500;
+        span:first-of-type {
+          color: orange;
+        }
+        span:last-of-type {
+          color: red;
+        }
+      }
+      p {
+        margin-top: 1rem;
+      }
+    }
+  }
+  &__graphic {
+    width: 100%;
+    img {
+      max-width: 100%;
+      display: inline-block;
+    }
+  }
+}
+
 @import "./mobile";
