@@ -151,3 +151,403 @@
     transition: all 280ms ease-in-out;
     width: 0;
 }
+
+
+/*///////////////////////// Questions css /////////////////////////////////// */
+body {
+  padding: 0;
+  margin: 0;
+ 
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.question-section {
+   background-image: url("./assets/gray-background.jpg");
+  background-size: cover;
+  width:100%;
+  margin-top:250px;
+  
+}
+
+.header {
+  font-size: 5vw;
+  color: #a67f6d;
+  font-family: ovo;
+  text-align: center;
+  margin: auto 0;
+}
+
+.header-wrapper {
+  float: right;
+  width: 60%;
+  height: 80%;
+  margin: auto;
+}
+
+.header-container {
+  width: 100%;
+  height: 150px;
+  background-color: white;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.content-container {
+   
+  
+  width: 80%;
+  display: flex;
+  flex-wrap: row wrap;
+  margin: 150px auto;
+}
+
+.content-container .form-container,
+.question-img {
+  margin: auto;
+  flex-basis: 45%;
+}
+
+.form-container {
+  width: 50%;
+  height: 30%;
+  color: black;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 10px 0;
+  position: relative;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-flow: column wrap;
+  margin: auto 0;
+  height: 10%;
+}
+
+.form-intro {
+  width: 50%;
+
+  font-size: 1rem;
+  margin: auto;
+  padding-bottom: 20px;
+}
+
+.question-img {
+  width: 50%;
+  height: 400px;
+}
+
+#title {
+  height: 60px;
+  border: solid 6px white;
+}
+
+#title,
+#text-box,
+#form-btn {
+  width: 80%;
+  align-items: center;
+  margin: auto;
+  margin-top: 10px;
+
+  background: transparent;
+}
+
+#title::placeholder,
+#text-box::placeholder {
+  margin: auto;
+  font-size: 24px;
+  color: black;
+  text-align: center;
+}
+
+#text-box {
+  height: 120px;
+  border: solid 6px white;
+}
+
+#form-btn {
+  width: 40%;
+  height: 40px;
+  margin: 15px 60px;
+  color: white;
+  font-weight: 700;
+  background-color: #312e2d;
+  border-radius: 30px;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: column wrap;
+}
+
+#form-btn:hover {
+  cursor: pointer;
+}
+
+#btn-arrow-hex {
+  font-size: 23px;
+}
+
+@media (max-width: 700px) {
+  .header {
+    color: black;
+    font-size: 1.8rem;
+    padding: 0;
+    color: #483923;
+    font-family: ovo;
+  }
+  .header-container {
+    width: 100%;
+    padding-bottom: 0;
+    padding-top: 30px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+  }
+
+  .content-container {
+    width: 100%;
+    display: flex;
+    flex-flow: column-reverse nowrap;
+    margin: auto;
+  }
+
+  .content-container .form-container,
+  .question-img {
+    margin: auto;
+    margin-bottom: 10px;
+    flex-basis: 45%;
+  }
+
+  .form-container {
+    width: 90%;
+    height: 40%;
+    margin: 10px auto;
+    color: white;
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: column wrap;
+  }
+
+  .form-intro {
+    flex: 1;
+    width: 70%;
+    font-size: 1rem;
+    margin: auto;
+    padding-bottom: 20px;
+  }
+
+  .question-img {
+    width: 90%;
+    height: 150px;
+  }
+
+  #title {
+    height: 30px;
+  }
+
+  #title,
+  #text-box {
+    width: 80%;
+    align-items: center;
+    margin: auto;
+    margin-top: 10px;
+    border: solid 4px white;
+    background: transparent;
+  }
+
+  #title::placeholder,
+  #text-box::placeholder {
+    color: rgb(192, 192, 192);
+    text-align: center;
+  }
+
+  #text-boxs {
+    height: 25vw;
+  }
+
+  #form-btn {
+    width: 40%;
+    margin: 10px 30px 0 auto;
+    border: solid 4px white;
+    color: rgb(192, 192, 192);
+    background: transparent;
+    border-radius: 30px;
+    padding: 5px 10px;
+  }
+}
+
+@media (max-width: 700px) {
+  .header {
+    color: black;
+    font-size: 1.8rem;
+    padding: 0;
+    color: #483923;
+    font-family: ovo;
+  }
+  .header-container {
+    width: 100%;
+    padding-bottom: 0;
+    padding-top: 30px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+  }
+
+  .content-container {
+    width: 100%;
+    display: flex;
+    flex-flow: column-reverse nowrap;
+    margin: auto;
+  }
+
+  .content-container .form-container,
+  .question-img {
+    margin: auto;
+    margin-bottom: 10px;
+    flex-basis: 45%;
+  }
+
+  .form-container {
+    width: 90%;
+    height: 40%;
+    margin: 10px auto;
+    color: white;
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: column wrap;
+  }
+
+  .form-intro {
+    flex: 1;
+    width: 70%;
+    font-size: 1rem;
+    margin: auto;
+    padding-bottom: 20px;
+  }
+
+  .question-img {
+    width: 90%;
+    height: 150px;
+  }
+
+  #title {
+    height: 30px;
+  }
+
+  #title,
+  #text-box {
+    width: 80%;
+    align-items: center;
+    margin: auto;
+    margin-top: 10px;
+    border: solid 4px white;
+    background: transparent;
+  }
+
+  #title::placeholder,
+  #text-box::placeholder {
+    color: rgb(192, 192, 192);
+    text-align: center;
+  }
+
+  #text-boxs {
+    height: 25vw;
+  }
+
+  #form-btn {
+    width: 40%;
+    margin: 10px 30px 0 auto;
+    border: solid 4px white;
+    color: rgb(192, 192, 192);
+    background: transparent;
+    border-radius: 30px;
+    padding: 5px 10px;
+  }
+}
+
+@media (min-width: 701) and (max-width: 1030px) {
+  .content-container {
+    width: 80%;
+
+    display: flex;
+    flex-flow: column-reverse nowrap;
+    margin: 150px auto;
+  }
+
+  .content-container .form-container,
+  .question-img {
+    margin: auto;
+    margin-bottom: 10px;
+    flex-basis: 45%;
+  }
+
+  .form-container {
+    width: 90%;
+
+    margin: 10px auto;
+    color: white;
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: column wrap;
+  }
+
+  .form-intro {
+    flex: 1;
+    width: 70%;
+    font-size: 1rem;
+    margin: auto;
+    padding-bottom: 20px;
+  }
+
+  .question-img {
+    width: 90%;
+    height: 150px;
+  }
+
+  #title {
+    height: 30px;
+  }
+
+  #title,
+  #text-box {
+    width: 80%;
+    align-items: center;
+    margin: auto;
+    margin-top: 10px;
+    border: solid 4px white;
+    background: transparent;
+  }
+
+  #title::placeholder,
+  #text-box::placeholder {
+    color: rgb(192, 192, 192);
+    text-align: center;
+  }
+
+  #text-boxs {
+    height: 25vw;
+  }
+
+  #form-btn {
+    width: 40%;
+    margin: 10px 7vw 0 auto;
+    border: solid 4px white;
+    color: rgb(192, 192, 192);
+    background: transparent;
+    border-radius: 30px;
+    padding: 5px 10px;
+  }
+}
