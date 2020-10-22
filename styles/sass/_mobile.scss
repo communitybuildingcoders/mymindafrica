@@ -1,0 +1,10 @@
+@media screen and (max-width: 1024px) {
+  .events {
+    &__details {
+      // border: solid red;
+      padding-top: 0.1rem;
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
+}
