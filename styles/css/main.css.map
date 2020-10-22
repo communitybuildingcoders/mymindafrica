@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "ACEA,AAAA,CAAC,CAAC;EACA,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,UAAU;CACvB",
+    "sources": [
+        "../sass/main.scss",
+        "../sass/_config.scss",
+        "../sass/_mobile.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
