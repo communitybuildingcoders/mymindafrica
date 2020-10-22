@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MyMindAfrica</title>
+
     <script
       src="https://kit.fontawesome.com/6ee8787cf6.js"
       crossorigin="anonymous"
@@ -19,6 +20,7 @@
     />
   </head>
   <body>
+    
     <!--  Hero Section-->
 
     <!-- Floating Nav -->
@@ -105,6 +107,35 @@
 
     <!-- Question Section -->
 
-    <script src="app.js" type="text"></script>
-  </body>
+  <section class='question-section'>
+      <div class="header-container">
+        <div class="header-wrapper">
+          <h1 id="header" class="header">
+            <span style="color: black">Have </span
+            ><span style="color: #b2633c">A </span> Question?
+          </h1>
+        </div>
+      </div>
+      <div class="content-container">
+        <img class="question-img" src="./assets/mindAfricaQuestions.png" />
+        <div class="form-container" id="form-container">
+          <p class="form-intro">
+            If you have any questions, send us a message. 30 Seconds here, can
+            be a lifetime of happiness!
+          </p>
+          <form id="form" method="POST" class="form-wrapper">
+            <input id="title" name="title" type="text" placeholder="Subject" />
+            <textarea id="text-box" placeholder="Question"></textarea>
+            <button id="form-btn">
+              Submit <span id="btn-arrow-hex"> &#x203A; </span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+
+    <script src="./app.js" ></script>
+
+</body>
 </html>
