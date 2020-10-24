@@ -8,3 +8,273 @@
     }
   }
 }
+
+@media (max-width: 700px) {
+  .header {
+    color: black;
+    font-size: 1.8rem;
+    padding: 0;
+    color: #483923;
+    font-family: ovo;
+  }
+  .header-container {
+    width: 100%;
+    padding-bottom: 0;
+    padding-top: 30px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+  }
+
+  .content-container {
+    width: 100%;
+    display: flex;
+    flex-flow: column-reverse nowrap;
+    margin: auto;
+  }
+
+  .content-container .form-container,
+  .question-img {
+    margin: auto;
+    margin-bottom: 10px;
+    flex-basis: 45%;
+  }
+
+  .form-container {
+    width: 90%;
+    height: 40%;
+    margin: 10px auto;
+    color: white;
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: column wrap;
+  }
+
+  .form-intro {
+    flex: 1;
+    width: 70%;
+    font-size: 1rem;
+    margin: auto;
+    padding-bottom: 20px;
+  }
+
+  .question-img {
+    width: 90%;
+    height: 150px;
+  }
+
+  #title {
+    height: 30px;
+  }
+
+  #title,
+  #text-box {
+    width: 80%;
+    align-items: center;
+    margin: auto;
+    margin-top: 10px;
+    border: solid 4px white;
+    background: transparent;
+  }
+
+  #title::placeholder,
+  #text-box::placeholder {
+    color: rgb(192, 192, 192);
+    text-align: center;
+  }
+
+  #text-boxs {
+    height: 25vw;
+  }
+
+  #form-btn {
+    width: 40%;
+    margin: 10px 30px 0 auto;
+    border: solid 4px white;
+    color: rgb(192, 192, 192);
+    background: transparent;
+    border-radius: 30px;
+    padding: 5px 10px;
+  }
+  //////////////Social Medial ////////////////
+  .social-media {
+    height: 100%;
+    padding-bottom: 50px;
+
+
+  }
+  .title-wrapper {
+    position: relative;
+    top: 8px;
+    margin: auto;
+    width: 90%;
+    height: 50%;
+    background-color: rgba(36, 36, 36, 0.596);
+    color:white;
+
+    .social-media-title2,
+    .social-media-detail {
+      width: 90%;
+      text-align: center;
+      margin: auto;
+    }
+   
+    .social-media-detail {
+      font-size: 1.5rem;
+    }
+    .social-media-title2 {
+      font-size: 3rem;
+    }
+  }
+
+  
+
+  .scl-links-wrapper {
+    width: 90%;
+    height: 20%;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+
+    .img-cell {
+      flex: 1 1 100%;
+      margin-top: 0;
+    }
+  }
+
+  #links-container{
+    display:block;
+  }
+   #media-links{
+      text-decoration: none;
+      color:black;
+      
+      &::visited{
+        text-decoration: none;
+      }
+    }
+
+  .white-wall,
+  .scl-links,.social-media-title, #img-cell2,
+  #img-cell3  {
+    display: none;
+  }
+
+}
+
+@media only screen and (min-width: 701px) and (max-width: 1030px) {
+  .content-container {
+    width: 80%;
+
+    display: flex;
+    flex-flow: column-reverse nowrap;
+    margin: 150px auto;
+  }
+
+  .content-container .form-container,
+  .question-img {
+    margin: auto;
+    margin-bottom: 10px;
+    flex-basis: 45%;
+  }
+
+  .form-container {
+    width: 90%;
+
+    margin: 10px auto;
+    color: black;
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: column wrap;
+  }
+
+  .form-intro {
+    flex: 1;
+    width: 70%;
+    font-size: 1rem;
+    margin: auto;
+    padding-bottom: 20px;
+  }
+
+  .question-img {
+    width: 90%;
+    height: 150px;
+  }
+
+  #title {
+    height: 30px;
+  }
+
+  #title,
+  #text-box {
+    width: 80%;
+    align-items: center;
+    margin: auto;
+    margin-top: 10px;
+    border: solid 4px white;
+    background: transparent;
+  }
+
+  #title::placeholder,
+  #text-box::placeholder {
+    color: black;
+    text-align: center;
+  }
+
+  #text-boxs {
+    height: 25vw;
+  }
+
+  #form-btn {
+    width: 40%;
+    margin: 10px 7vw 0 auto;
+    border: solid 4px white;
+    color: rgb(192, 192, 192);
+    background: transparent;
+    border-radius: 30px;
+    padding: 5px 10px;
+  }
+
+  /////////////////////Social Media Section //////////////////
+
+  .social-media {
+    height: 750px;
+  }
+  .scl-links-wrapper {
+    width: 90%;
+    height: 300px;
+    margin: auto;
+    display: flex;
+    flex-flow: row nowrap;
+
+    padding: 5px;
+  }
+
+  .img-cell {
+    width: 25%;
+    height: 100%;
+    flex: 1 1 auto;
+    display: flex;
+    flex-flow: row wrap;
+
+    margin: 5px;
+    margin-top: 90px;
+    z-index: 1;
+  }
+
+  .white-wall {
+    display: none;
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    bottom: -11px;
+    margin-bottom: 100px;
+  }
+}

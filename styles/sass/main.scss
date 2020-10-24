@@ -2,12 +2,145 @@
 
 // This will be the overall styling for desktop etc
 
-// events
-.events {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-image: url("../../assets/gray-background.jpg");
+/* /////////////////////Social Media Styling ////////////// */
+body{
+   background-image: url("../../assets/gray-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+ 
+}
+.social-media{
+  height:650px;
+  
+}
+
+
+.title-wrapper{
+  position: relative;
+  top:80px;
+  margin-left:100px;
+  padding-bottom:20px;
+}
+.social-media-detail{
+    font-size:2rem;
+    font-weight: 700;
+  }
+
+.social-media-title{
+  font-size:4rem;
+
+ span:first-of-type{
+   color:rgb(3, 224, 3);
+ }
+
+ span:last-of-type{
+   color:rgb(216, 43, 0);
+ }
+}
+
+
+
+.white-wall{
+  width:100%;
+  height:200px;
+  background-color: whitesmoke;
+  position:absolute;
+  bottom:0;
+  margin-bottom:100px;  
+}
+
+.scl-links-wrapper{
+  width:90%;
+  height:300px;
+  margin-left:100px;
+  display:flex;
+  flex-flow:row nowrap;
+  justify-content: space-between;
+}
+
+.img-cell{
+  width:25%;
+  height:100%;
+  flex:0 1 30%;
+  display:flex;
+  flex-flow:row wrap;
+  margin-top:100px;
+  z-index: 1;
+}
+
+#links-container{
+  display:none;
+}
+
+.scl-links, .scl-imgs{
+  height:90%;
+  flex:0 1 auto;
+}
+
+ .fa-facebook {
+ font-size:3rem;
+  margin-top:-9px;
+  color:rgb(218, 218, 218);
+}
+
+.fa-twitter{
+  font-size: 3.18rem;
+  margin-top:-12px;
+  color:rgb(218, 218, 218);
+}
+
+.fa-twitter:hover{
+  background-color:transparent;
+  line-height: 38px;
+  color:rgba(233, 71, 7, 0.76);
+   transition: color 1.5s;
+   border-radius: 50%;
+}
+
+.fa-facebook:hover{
+  transition: color 1.5s;
+  color:rgb(230, 47, 30);
+  line-height: 45px;
+}
+
+.fa-whatsapp{
+  font-size:3.12rem;
+  margin-top:-9px;
+  border-radius: 50%;
+  color:rgb(218, 218, 218);
+  background-color: rgb(34, 34, 34);
+  transition:all 2s ease;
+}
+
+.fa-whatsapp:hover{
+  
+color:rgb(198, 218, 221);
+padding-top:-10px;
+line-height: 40px;
+background-color: rgb(206, 26, 2);
+
+}
+.scl-links{
+  width:100%;
+  height:50px;
+  text-align:center;
+  background-color: black;
+  padding:10px;
+}
+
+.scl-imgs{
+ width:100%;
+  
+}
+
+// events
+.events__header{
+  width:100%;
+  background-color: white;
+}
+.events {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
   background-position-y: 6rem;
   &__header {
     padding: 1rem 0;
@@ -92,5 +225,150 @@
     }
   }
 }
+
+/*///////////////////////// Questions css /////////////////////////////////// */
+body {
+  padding: 0;
+  margin: 0;
+ 
+ 
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.question-section {
+    background-image:url("../../assets/gray-background.jpg");
+    background-size:cover;
+  width:100%;
+  height:800px;
+  margin-top:250px;
+  
+}
+
+.header {
+  font-size: 5vw;
+  color: #a67f6d;
+  font-family: ovo;
+  text-align: center;
+  margin: auto 0;
+  
+}
+
+.header-wrapper {
+  display:flex;
+  justify-content: flex-end;
+  width: 60%;
+  height: 80%;
+  margin: auto;
+}
+
+.header-container {
+  width: 100%;
+  height: 150px;
+  background-color: white;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.content-container {
+   
+  
+  width: 80%;
+  display: flex;
+  flex-wrap: row wrap;
+  margin: 150px auto;
+}
+
+.content-container .form-container,
+.question-img {
+  margin: auto;
+  flex-basis: 45%;
+}
+
+.form-container {
+  width: 50%;
+  height: 30%;
+  color: black;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 10px 0;
+  position: relative;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-flow: column wrap;
+  margin: auto 0;
+  height: 10%;
+}
+
+.form-intro {
+  width: 50%;
+
+  font-size: 1rem;
+  margin: auto;
+  padding-bottom: 20px;
+}
+
+.question-img {
+  width: 50%;
+  height: 400px;
+}
+
+#title {
+  height: 60px;
+  border: solid 6px white;
+}
+
+#title,
+#text-box,
+#form-btn {
+  width: 80%;
+  align-items: center;
+  margin: auto;
+  margin-top: 10px;
+
+  background: transparent;
+}
+
+#title::placeholder,
+#text-box::placeholder {
+  margin: auto;
+  font-size: 24px;
+  color: black;
+  text-align: center;
+}
+
+#text-box {
+  height: 120px;
+  border: solid 6px white;
+}
+
+#form-btn {
+  width: 40%;
+  height: 40px;
+  margin: 15px 60px;
+  color: white;
+  font-weight: 700;
+  background-color: #312e2d;
+  border-radius: 30px;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: column wrap;
+}
+
+#form-btn:hover {
+  cursor: pointer;
+}
+
+#btn-arrow-hex {
+  font-size: 23px;
+}
+
+
+/*# sourceMappingURL=main.css.map */
 
 @import "./mobile";
