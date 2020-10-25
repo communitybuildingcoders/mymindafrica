@@ -3,139 +3,132 @@
 // This will be the overall styling for desktop etc
 
 /* /////////////////////Social Media Styling ////////////// */
-body{
-   background-image: url("../../assets/gray-background.jpg");
+body {
+  background-image: url("../../assets/gray-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
- 
 }
-.social-media{
-  height:650px;
-  
+.social-media {
+  height: 650px;
 }
 
-
-.title-wrapper{
+.title-wrapper {
   position: relative;
-  top:80px;
-  margin-left:100px;
-  padding-bottom:20px;
+  top: 80px;
+  margin-left: 100px;
+  padding-bottom: 20px;
 }
-.social-media-detail{
-    font-size:2rem;
-    font-weight: 700;
+.social-media-detail {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.social-media-title {
+  font-size: 4rem;
+
+  span:first-of-type {
+    color: rgb(3, 224, 3);
   }
 
-.social-media-title{
-  font-size:4rem;
-
- span:first-of-type{
-   color:rgb(3, 224, 3);
- }
-
- span:last-of-type{
-   color:rgb(216, 43, 0);
- }
+  span:last-of-type {
+    color: rgb(216, 43, 0);
+  }
 }
 
-
-
-.white-wall{
-  width:100%;
-  height:200px;
+.white-wall {
+  width: 100%;
+  height: 200px;
   background-color: whitesmoke;
-  position:absolute;
-  bottom:0;
-  margin-bottom:100px;  
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 100px;
 }
 
-.scl-links-wrapper{
-  width:90%;
-  height:300px;
-  margin-left:100px;
-  display:flex;
-  flex-flow:row nowrap;
+.scl-links-wrapper {
+  width: 90%;
+  height: 300px;
+  margin-left: 100px;
+  display: flex;
+  flex-flow: row nowrap;
   justify-content: space-between;
 }
 
-.img-cell{
-  width:25%;
-  height:100%;
-  flex:0 1 30%;
-  display:flex;
-  flex-flow:row wrap;
-  margin-top:100px;
+.img-cell {
+  width: 25%;
+  height: 100%;
+  flex: 0 1 30%;
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 100px;
   z-index: 1;
 }
 
-#links-container{
-  display:none;
+#links-container {
+  display: none;
 }
 
-.scl-links, .scl-imgs{
-  height:90%;
-  flex:0 1 auto;
+.scl-links,
+.scl-imgs {
+  height: 90%;
+  flex: 0 1 auto;
 }
 
- .fa-facebook {
- font-size:3rem;
-  margin-top:-9px;
-  color:rgb(218, 218, 218);
+.fa-facebook {
+  font-size: 3rem;
+  margin-top: -9px;
+  color: rgb(218, 218, 218);
 }
 
-.fa-twitter{
+.fa-twitter {
   font-size: 3.18rem;
-  margin-top:-12px;
-  color:rgb(218, 218, 218);
+  margin-top: -12px;
+  color: rgb(218, 218, 218);
 }
 
-.fa-twitter:hover{
-  background-color:transparent;
+.fa-twitter:hover {
+  background-color: transparent;
   line-height: 38px;
-  color:rgba(233, 71, 7, 0.76);
-   transition: color 1.5s;
-   border-radius: 50%;
+  color: rgba(233, 71, 7, 0.76);
+  transition: color 1.5s;
+  border-radius: 50%;
 }
 
-.fa-facebook:hover{
+.fa-facebook:hover {
   transition: color 1.5s;
-  color:rgb(230, 47, 30);
+  color: rgb(230, 47, 30);
   line-height: 45px;
 }
 
-.fa-whatsapp{
-  font-size:3.12rem;
-  margin-top:-9px;
+.fa-whatsapp {
+  font-size: 3.12rem;
+  margin-top: -9px;
   border-radius: 50%;
-  color:rgb(218, 218, 218);
+  color: rgb(218, 218, 218);
   background-color: rgb(34, 34, 34);
-  transition:all 2s ease;
+  transition: all 2s ease;
 }
 
-.fa-whatsapp:hover{
-  
-color:rgb(198, 218, 221);
-padding-top:-10px;
-line-height: 40px;
-background-color: rgb(206, 26, 2);
-
+.fa-whatsapp:hover {
+  color: rgb(198, 218, 221);
+  padding-top: -10px;
+  line-height: 40px;
+  background-color: rgb(206, 26, 2);
 }
-.scl-links{
-  width:100%;
-  height:50px;
-  text-align:center;
+.scl-links {
+  width: 100%;
+  height: 50px;
+  text-align: center;
   background-color: black;
-  padding:10px;
+  padding: 10px;
 }
 
-.scl-imgs{
- width:100%;
-  
+.scl-imgs {
+  width: 100%;
 }
 
 // events
-.events__header{
-  width:100%;
+.events__header {
+  width: 100%;
   background-color: white;
 }
 .events {
@@ -152,10 +145,10 @@ background-color: rgb(206, 26, 2);
       font-size: 2.5rem;
       color: darkgray;
       span:first-of-type {
-        color: orange;
+        color: #deb887;
       }
       span:last-of-type {
-        color: red;
+        color: #c53030;
       }
     }
   }
@@ -206,10 +199,10 @@ background-color: rgb(206, 26, 2);
         text-transform: capitalize;
         font-weight: 500;
         span:first-of-type {
-          color: orange;
+          color: #deb887;
         }
         span:last-of-type {
-          color: red;
+          color: #c53030;
         }
       }
       p {
@@ -226,25 +219,86 @@ background-color: rgb(206, 26, 2);
   }
 }
 
+// newsletter
+.newsletter {
+  background-color: #0e0808;
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 2rem 0 2rem 0;
+  &__container {
+    max-width: 85%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+    align-items: center;
+    margin: 0 auto;
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    h2 {
+      font-size: 4rem;
+      font-weight: 400;
+      text-transform: capitalize;
+      span:first-of-type {
+        color: brown;
+      }
+      span:last-of-type {
+        color: burlywood;
+      }
+    }
+  }
+  &__form {
+    &-group {
+      display: flex;
+      flex-direction: column;
+      label {
+        text-transform: capitalize;
+      }
+      input {
+        font-size: 1rem;
+        padding: 0.5rem 0;
+        margin-top: 0.7rem;
+        border: none;
+      }
+    }
+    &-submit {
+      margin-top: 1rem;
+      text-transform: capitalize;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 110px;
+      font-size: 1rem;
+      padding: 0.5rem 1rem;
+      background-color: darkgray;
+      color: #0e0808;
+      border: 2px solid transparent;
+      cursor: pointer;
+      &:hover {
+        background-color: #0e0808;
+        color: darkgray;
+        border: 2px solid darkgray;
+      }
+    }
+  }
+  &__graphic {
+    img {
+      width: 100%;
+    }
+  }
+}
+
 /*///////////////////////// Questions css /////////////////////////////////// */
-body {
-  padding: 0;
-  margin: 0;
- 
- 
-}
-
-* {
-  box-sizing: border-box;
-}
-
 .question-section {
-    background-image:url("../../assets/gray-background.jpg");
-    background-size:cover;
-  width:100%;
-  height:800px;
-  margin-top:250px;
-  
+  background-image: url("../../assets/gray-background.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 800px;
+  margin-top: 250px;
 }
 
 .header {
@@ -253,11 +307,10 @@ body {
   font-family: ovo;
   text-align: center;
   margin: auto 0;
-  
 }
 
 .header-wrapper {
-  display:flex;
+  display: flex;
   justify-content: flex-end;
   width: 60%;
   height: 80%;
@@ -273,8 +326,6 @@ body {
 }
 
 .content-container {
-   
-  
   width: 80%;
   display: flex;
   flex-wrap: row wrap;
@@ -367,7 +418,6 @@ body {
 #btn-arrow-hex {
   font-size: 23px;
 }
-
 
 /*# sourceMappingURL=main.css.map */
 
