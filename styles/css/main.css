@@ -319,56 +319,63 @@ body {
   width: 100%;
 }
 /* ///////////////////////// Donations CSS //////////////////////////////////*/
+
+
 .donationtitle {
   font-family: 'Cormorant Garamond', serif;
   font-size: 4.5rem;
-  color: black;
+  color: rgba(1, 1, 1, 0.65);
+  background-color: transparent;
   position: relative;
-  left: 65%;
+  left: 50%;
   bottom: 0;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
-  max-width: 600px;
-  top: -20rem;
+  max-width: 100%;
+  top: -32rem;
   bottom: 40%;
   text-align: center;
 }
 
 .donationpara {
   font-family: 'Cormorant Garamond', serif;
-  border: 4px solid black;
-  font-size: 1.5rem;
-  color: black;
+  background-color: rgba(1, 1, 1, 0.65);
+  font-size: 1.7rem;
+  color:white;
   position: relative;
-  left: 65%;
-  bottom: auto;
+  display: block;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
-  max-width: 600px;
-  top: -15rem;
-  bottom: 40%;
+  width: 100%;
+  top: -32rem;
+  left: 50%;
   text-align: center;
-  display: flex;
+  padding: 10px;
 }
 
+.a {
+  color: burlywood;
+}
+
+.diff {
+  color: brown;
+}
 
 .donationimg {
   position: relative;
+  padding-left: 10%;
+  padding-right: 10%;
   bottom: -12rem;
-  right: auto;
-  left: 30rem;
-  max-width: 600px;
+  max-width: 100%;
   width: 50%;
-  height: 50%;
-  display: inline-flex;
+  height: 500px;
 }
 
 
 .learnmore {
-  position: relative;
-  top: -8rem;
-  left: 26rem;
-  transform: translate(-20%, -50%);
+  top: -15rem;
+  left: 55%;
+  transform: translate(-155%, -50%);
   border-radius: 20px;
   border: none;
   color: rgb(30, 90, 0);
@@ -376,8 +383,7 @@ body {
   padding: .5vw;
   text-decoration: none;
   text-align: center;
-  display: inline-block;
-  font-size: 25px;
+  font-size: 50px;
   white-space: nowrap;
 }
 
@@ -392,17 +398,16 @@ body {
   border: 1px solid rgba(#fff, 0);
   bottom: 0px;
   content: " ";
-  display: block;
+  display: inline-flex;
   margin: 0 auto;
   position: relative;
   transition: all 280ms ease-in-out;
   width: 0;
 }
-
+/* 
 .goback {
-  position: relative;
-  top: -14.2rem;
-  left: 11rem;
+  top: .5rem;
+  left: 40%;
   transform: translate(-155%, -50%);
   border-radius: 20px;
   border: none;
@@ -411,7 +416,6 @@ body {
   padding: .5vw;
   text-decoration: none;
   text-align: center;
-  display: inline-block;
   font-size: 25px;
   white-space: nowrap;
 }
@@ -432,7 +436,14 @@ body {
   position: relative;
   transition: all 280ms ease-in-out;
   width: 0;
+} */
+
+.donbtns {
+  width: 100%;
+
 }
+
+
 /*///////////////////////// Questions css /////////////////////////////////// */
 .question-section {
   background-image: url("../../assets/gray-background.jpg");
