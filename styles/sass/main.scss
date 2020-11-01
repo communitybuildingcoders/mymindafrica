@@ -126,6 +126,89 @@ body {
   width: 100%;
 }
 
+// Services
+.services {
+  padding: 365px 0 0 0;
+  display: grid;
+  grid-template-columns: 50% 50%;
+
+  &__detail {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    background-color: #e6ecee;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 60px 30px;
+    order: 3;
+  }
+
+  &__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 40px 30px;
+
+    .title-our {
+      color:#627000;
+    }
+
+    .title-services {
+      color: #382f20;
+    }
+  }
+
+  &__item {
+    border-top: 2px solid;
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    padding: 40px 10px 0;
+    max-width: 500px;
+
+    &-number {
+      color: #666769;
+      font-size: 2.7rem;
+      letter-spacing: 3px;
+      margin: 10px 20px 10px 10px;
+      padding-right: 10px;
+    }
+
+    &-detail {
+      h4 {
+        font-size: 2.3rem;
+      }
+
+      .one {
+        color: #737373;
+      }
+
+      .two {
+        color: #6F7259;
+      }
+
+      .three {
+        color: #8d8740;
+      }
+      
+      p {
+        font-size: 1.3rem;
+      }
+    }
+  }
+
+  &__graphic {
+    max-width: 80%;
+    margin: 0 auto;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
 // events
 .events__header {
   width: 100%;

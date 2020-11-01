@@ -167,7 +167,85 @@
   #img-cell3 {
     display: none;
   }
+
+  //////////////Services ////////////////
+  .services {
+    position: relative;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+
+    &__detail {
+      background-color: #e6ecee;
+      padding: 30px;
+      order: 2;
+    }
+
+    &__title {
+      font-size: 2.3rem;
+      padding: 40px 10px;
+      text-align: center;
+      order: 1;
+  
+      .title-our {
+        color:#627000;
+      }
+  
+      .title-services {
+        color: #382f20;
+      }
+    }
+
+    &__item {
+      border-top: 2px solid;
+      display: flex;
+      justify-content: center;
+      margin: 20px auto;
+      padding: 10px 10px;
+      max-width: 500px;
+
+      &-number {
+        color: #666769;
+        font-size: 2.7rem;
+        letter-spacing: 3px;
+        margin: 10px 20px 10px 10px;
+        padding-right: 10px;
+      }
+
+      &-detail {
+        h4 {
+          font-size: 1.7rem;
+        }
+
+        .one {
+          color: #737373;
+        }
+
+        .two {
+          color: #6F7259;
+        }
+
+        .three {
+          color: #8d8740;
+        }
+      }
+    }
+
+    &__graphic {
+      margin: 20px auto;
+      width: 80%;
+      order: 3;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+
 }
+
+
 
 @media only screen and (min-width: 701px) and (max-width: 1030px) {
   .content-container {
@@ -279,5 +357,79 @@
     position: absolute;
     bottom: -11px;
     margin-bottom: 100px;
+  }
+
+  ////////////Services ////////////////
+  .services {
+    position: relative;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+
+    &__detail {
+      background-color: #e6ecee;
+      padding: 30px;
+      order: 2;
+    }
+
+    &__title {
+      font-size: 2.7rem;
+      padding: 70px 10px;
+      text-align: center;
+      order: 1;
+  
+      .title-our {
+        color:#627000;
+      }
+  
+      .title-services {
+        color: #382f20;
+      }
+    }
+
+    &__item {
+      border-top: 2px solid;
+      display: flex;
+      justify-content: center;
+      margin: 20px auto;
+      padding: 10px 10px;
+      max-width: 500px;
+
+      &-number {
+        color: #666769;
+        font-size: 2.7rem;
+        letter-spacing: 3px;
+        margin: 10px 20px 10px 10px;
+        padding-right: 10px;
+      }
+
+      &-detail {
+        h4 {
+          font-size: 1.7rem;
+        }
+
+        .one {
+          color: #737373;
+        }
+
+        .two {
+          color: #6F7259;
+        }
+
+        .three {
+          color: #8d8740;
+        }
+      }
+    }
+
+    &__graphic {
+      margin: 20px auto;
+      width: 80%;
+      order: 3;
+
+      img {
+        width: 100%;
+      }
+    }
   }
 }
