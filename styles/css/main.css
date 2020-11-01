@@ -321,21 +321,27 @@ body {
 /* ///////////////////////// Donations CSS //////////////////////////////////*/
 
 
+.donation {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .donationtitle {
   font-family: 'Cormorant Garamond', serif;
   font-size: 4.5rem;
   color: rgba(1, 1, 1, 0.65);
   background-color: transparent;
   position: relative;
-  left: 50%;
+  top: 50%;
+  left: 95%;
   bottom: 0;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   max-width: 100%;
-  top: -32rem;
-  bottom: 40%;
-  text-align: center;
-}
+  margin-top: 10px;
+ }
 
 .donationpara {
   font-family: 'Cormorant Garamond', serif;
@@ -343,14 +349,17 @@ body {
   font-size: 1.7rem;
   color:white;
   position: relative;
-  display: block;
+  margin-top: 10px;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
-  width: 100%;
-  top: -32rem;
-  left: 50%;
+  width: 50%;
+  min-width: 50%;
+  top: 50%;
+  left: 55%;
+  height: auto;
   text-align: center;
   padding: 10px;
+  overflow-wrap: break-word;
 }
 
 .a {
@@ -362,19 +371,19 @@ body {
 }
 
 .donationimg {
-  position: relative;
-  padding-left: 10%;
-  padding-right: 10%;
-  bottom: -12rem;
-  max-width: 100%;
-  width: 50%;
-  height: 500px;
+  object-fit: cover;
+
+  /* -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px); */
 }
 
 
 .learnmore {
   top: -15rem;
-  left: 55%;
+  left: 70%;
   transform: translate(-155%, -50%);
   border-radius: 20px;
   border: none;
@@ -385,6 +394,8 @@ body {
   text-align: center;
   font-size: 50px;
   white-space: nowrap;
+  display: flex;
+  overflow-wrap: break-word;
 }
 
 .learnmore:hover,
@@ -403,7 +414,10 @@ body {
   position: relative;
   transition: all 280ms ease-in-out;
   width: 0;
+  flex-direction: column;
 }
+
+
 /* 
 .goback {
   top: .5rem;
