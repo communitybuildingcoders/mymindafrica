@@ -1,4 +1,10 @@
+// Donations JS //
+mybutton = document.getElementById("toTop");
 
+function topFunction() {
+  document.body.scrollTop = 0; //for Safari//
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera // 
+}
 
 
 ///////////Questions Javscript//////////
