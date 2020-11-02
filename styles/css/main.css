@@ -322,28 +322,47 @@ body {
 
 
 .donation {
+  display: flex;
+  flex-wrap: wrap;
   width: 100%;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+@media screen and (max-width: 992px) and (min-width: 400px) {
+  .donation {
+    flex-direction: column;
+  }
+}
+
 .donationtitle {
+  display: flex;
   font-family: 'Cormorant Garamond', serif;
   font-size: 4.5rem;
   color: rgba(1, 1, 1, 0.65);
   background-color: transparent;
   position: relative;
-  top: 50%;
-  left: 95%;
+  top: -140%;
+  left: 110%;
   bottom: 0;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   max-width: 100%;
   margin-top: 10px;
+  overflow-wrap: break-word;
+ }
+
+ @media screen and (max-width: 992px)and (min-width: 400px) {
+   .donationtitle {
+     width: 100%;
+     left: 50%;
+     top: 15%;
+   }
  }
 
 .donationpara {
+  display: flex;
   font-family: 'Cormorant Garamond', serif;
   background-color: rgba(1, 1, 1, 0.65);
   font-size: 1.7rem;
@@ -354,12 +373,20 @@ body {
   transform: translateX(-50%);
   width: 50%;
   min-width: 50%;
-  top: 50%;
-  left: 55%;
+  top: -140%;
+  left: 70%;
   height: auto;
   text-align: center;
-  padding: 10px;
   overflow-wrap: break-word;
+}
+
+@media screen and (max-width: 992px)and (min-width: 400px){
+  .donationpara {
+    width: 100%;
+    left: 50%;
+    float: none;
+    font-size: 1rem;
+  }
 }
 
 .a {
@@ -370,20 +397,25 @@ body {
   color: brown;
 }
 
-.donationimg {
-  object-fit: cover;
 
-  /* -webkit-filter: blur(5px);
-  -moz-filter: blur(5px);
-  -o-filter: blur(5px);
-  -ms-filter: blur(5px);
-  filter: blur(5px); */
+.donationimg {
+  width: 40%;
+  height: auto;
+  object-fit: cover;
 }
 
+@media screen and (max-width: 992px) and (min-width: 400px) {
+  .donationimg {
+    object-fit: cover;
+    width: 100%;
+    padding-top: 5%;
+    margin: 0;
+  }
+}
 
 .learnmore {
-  top: -15rem;
-  left: 70%;
+  top: -10.5rem;
+  left: 67%;
   transform: translate(-155%, -50%);
   border-radius: 20px;
   border: none;
@@ -392,7 +424,7 @@ body {
   padding: .5vw;
   text-decoration: none;
   text-align: center;
-  font-size: 50px;
+  font-size: 40px;
   white-space: nowrap;
   display: flex;
   overflow-wrap: break-word;
@@ -415,6 +447,15 @@ body {
   transition: all 280ms ease-in-out;
   width: 0;
   flex-direction: column;
+}
+
+@media screen and (max-width: 992px ) and (min-width: 400px) {
+  .learnmore {
+    top: 4rem;
+    left: 45%;
+    padding-top: 10px;
+    font-size: 25px;
+  }
 }
 
 
