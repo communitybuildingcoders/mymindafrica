@@ -34,20 +34,13 @@
      align-items: center;
  }
 
- .donationimg {
-    -webkit-filter: blur(10px);
-    -moz-filter: blur(10px);
-    -o-filter: blur(10px);
-    -ms-filter: blur(10px);
-    filter: blur(10px);
-}
-
+ /* Donations CSS */
 .donationtitle {
     font-family: 'Cormorant Garamond', serif;
     font-size: 4.5rem;
     color: black;
     position: relative;
-    left: 130%;
+    left: 100%;
     bottom: 0;
     -webkit-transform:translateX(-50%);
     transform:translateX(-50%);
@@ -74,16 +67,15 @@
 }
      
 
-.africaimg {
-    position: relative;
-    bottom: 22rem;
-    right: auto;
-    left: -30rem;
-    max-width: 600px;
-    width: 50%;
-    height: 50% ;
+.donationimg {
+  width: fit-content;
 }
 
+ @media screen and (min-width: 600px) {
+.donationimg {
+    width: 100%;
+ }
+}
 
 .learnmore {
     position: relative;
@@ -118,7 +110,7 @@
     width: 0;
 }
 
-.goback {
+/* .goback {
     position: relative;
     top: 15.2rem;
     left: 24rem;
@@ -150,7 +142,7 @@
     position: relative;
     transition: all 280ms ease-in-out;
     width: 0;
-}
+} */
 
 
 /*///////////////////////// Questions css /////////////////////////////////// */
@@ -165,8 +157,7 @@ body {
 }
 
 .question-section {
-   background-image: url("./assets/gray-background.jpg");
-  background-size: cover;
+
   width:100%;
   margin-top:250px;
   
@@ -459,6 +450,9 @@ body {
     color: rgb(192, 192, 192);
     text-align: center;
   }
+
+
+  
 
   #text-boxs {
     height: 25vw;

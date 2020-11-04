@@ -1,8 +1,14 @@
 @media screen and (max-width: 1024px) {
   .events {
     &__details {
-      // border: solid red;
       padding-top: 0.1rem;
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
+
+  .newsletter {
+    &__container {
       display: flex;
       flex-direction: column-reverse;
     }
@@ -103,8 +109,6 @@
   .social-media {
     height: 100%;
     padding-bottom: 50px;
-
-
   }
   .title-wrapper {
     position: relative;
@@ -113,7 +117,7 @@
     width: 90%;
     height: 50%;
     background-color: rgba(36, 36, 36, 0.596);
-    color:white;
+    color: white;
 
     .social-media-title2,
     .social-media-detail {
@@ -121,7 +125,7 @@
       text-align: center;
       margin: auto;
     }
-   
+
     .social-media-detail {
       font-size: 1.5rem;
     }
@@ -129,8 +133,6 @@
       font-size: 3rem;
     }
   }
-
-  
 
   .scl-links-wrapper {
     width: 90%;
@@ -146,25 +148,68 @@
     }
   }
 
-  #links-container{
-    display:block;
+  #links-container {
+    display: block;
   }
-   #media-links{
+  #media-links {
+    text-decoration: none;
+    color: black;
+
+    &::visited {
       text-decoration: none;
-      color:black;
-      
-      &::visited{
-        text-decoration: none;
-      }
     }
+  }
 
   .white-wall,
-  .scl-links,.social-media-title, #img-cell2,
-  #img-cell3  {
+  .scl-links,
+  .social-media-title,
+  #img-cell2,
+  #img-cell3 {
     display: none;
   }
 
+  //////////////Services ////////////////
+  .services {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+
+    &__detail {
+      padding: 30px;
+      order: 2;
+    }
+
+    &__title {
+      padding: 30px 10px 70px;
+      order: 1;
+      font-size: 2rem;
+    }
+
+    &__item {
+      padding: 10px 10px;
+      max-width: 500px;
+
+      &-detail {
+        h4 {
+          font-size: 1.7rem;
+        }
+
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    &__graphic {
+      margin: 20px auto;
+      order: 3;
+    }
+  }
+
+
 }
+
+
 
 @media only screen and (min-width: 701px) and (max-width: 1030px) {
   .content-container {
@@ -276,5 +321,39 @@
     position: absolute;
     bottom: -11px;
     margin-bottom: 100px;
+  }
+
+  ////////////Services ////////////////
+  .services {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+
+    &__detail {
+      padding: 30px;
+      order: 2;
+    }
+
+    &__title {
+      padding: 30px 10px 70px;
+      order: 1;
+  
+    }
+
+    &__item {
+      padding: 10px 10px;
+      max-width: 500px;
+
+      &-detail {
+        h4 {
+          font-size: 1.7rem;
+        }
+      }
+    }
+
+    &__graphic {
+      margin: 20px auto;
+      order: 3;
+    }
   }
 }
