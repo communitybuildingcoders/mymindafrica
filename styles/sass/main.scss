@@ -475,6 +475,15 @@ body {
   text-align: center;
 }
 
+#title:focus, 
+#text-box:focus{
+  width:82%;
+  font-size:28px;
+  color:rgb(44, 43, 43);
+  border:solid 8px black;
+  outline:none;
+}
+
 #text-box {
   height: 120px;
   border: solid 6px white;

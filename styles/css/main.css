@@ -482,8 +482,6 @@ body {
 .newsletter__graphic img {
   width: 100%;
 }
-/* ///////////////////////// Donations CSS //////////////////////////////////*/
-
 
 .donation {
   display: flex;
@@ -638,12 +636,10 @@ body {
   font-size: 25px;
   white-space: nowrap;
 }
-
 .goback:hover,
 .goback:active {
   letter-spacing: 5px;
 }
-
 .goback,
 .goback {
   backface-visibility: hidden;
@@ -661,7 +657,6 @@ body {
   width: 100%;
 
 }
-
 
 /*///////////////////////// Questions css /////////////////////////////////// */
 .question-section {
@@ -802,6 +797,15 @@ body {
   font-size: 24px;
   color: black;
   text-align: center;
+}
+
+#title:focus,
+#text-box:focus {
+  width: 82%;
+  font-size: 28px;
+  color: #2c2b2b;
+  border: solid 8px black;
+  outline: none;
 }
 
 #text-box {
