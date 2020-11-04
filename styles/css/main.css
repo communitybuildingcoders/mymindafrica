@@ -482,186 +482,6 @@ body {
 .newsletter__graphic img {
   width: 100%;
 }
-/* ///////////////////////// Donations CSS //////////////////////////////////*/
-
-
-.donation {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-@media screen and (max-width: 992px) and (min-width: 400px) {
-  .donation {
-    flex-direction: column;
-  }
-}
-
-.donationtitle {
-  display: flex;
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 4.5rem;
-  color: rgba(1, 1, 1, 0.65);
-  background-color: transparent;
-  position: relative;
-  top: -140%;
-  left: 110%;
-  bottom: 0;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-  max-width: 100%;
-  margin-top: 10px;
-  overflow-wrap: break-word;
- }
-
- @media screen and (max-width: 992px)and (min-width: 400px) {
-   .donationtitle {
-     width: 100%;
-     left: 50%;
-     top: 15%;
-   }
- }
-
-.donationpara {
-  display: flex;
-  font-family: 'Cormorant Garamond', serif;
-  background-color: rgba(1, 1, 1, 0.65);
-  font-size: 1.7rem;
-  color:white;
-  position: relative;
-  margin-top: 10px;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-  width: 50%;
-  min-width: 50%;
-  top: -140%;
-  left: 70%;
-  height: auto;
-  text-align: center;
-  overflow-wrap: break-word;
-}
-
-@media screen and (max-width: 992px)and (min-width: 400px){
-  .donationpara {
-    width: 100%;
-    left: 50%;
-    float: none;
-    font-size: 1rem;
-  }
-}
-
-.a {
-  color: burlywood;
-}
-
-.diff {
-  color: brown;
-}
-
-
-.donationimg {
-  width: 40%;
-  height: auto;
-  object-fit: cover;
-}
-
-@media screen and (max-width: 992px) and (min-width: 400px) {
-  .donationimg {
-    object-fit: cover;
-    width: 100%;
-    padding-top: 5%;
-    margin: 0;
-  }
-}
-
-.learnmore {
-  top: -10.5rem;
-  left: 67%;
-  transform: translate(-155%, -50%);
-  border-radius: 20px;
-  border: none;
-  color: rgb(30, 90, 0);
-  background-color: transparent;
-  padding: .5vw;
-  text-decoration: none;
-  text-align: center;
-  font-size: 40px;
-  white-space: nowrap;
-  display: flex;
-  overflow-wrap: break-word;
-}
-
-.learnmore:hover,
-.learnmore:active {
-  letter-spacing: 5px;
-}
-
-.learnmore,
-.learnmore {
-  backface-visibility: hidden;
-  border: 1px solid rgba(#fff, 0);
-  bottom: 0px;
-  content: " ";
-  display: inline-flex;
-  margin: 0 auto;
-  position: relative;
-  transition: all 280ms ease-in-out;
-  width: 0;
-  flex-direction: column;
-}
-
-@media screen and (max-width: 992px ) and (min-width: 400px) {
-  .learnmore {
-    top: 4rem;
-    left: 45%;
-    padding-top: 10px;
-    font-size: 25px;
-  }
-}
-
-
-/* 
-.goback {
-  top: .5rem;
-  left: 40%;
-  transform: translate(-155%, -50%);
-  border-radius: 20px;
-  border: none;
-  color: rgb(30, 90, 0);
-  background-color: transparent;
-  padding: .5vw;
-  text-decoration: none;
-  text-align: center;
-  font-size: 25px;
-  white-space: nowrap;
-}
-
-.goback:hover,
-.goback:active {
-  letter-spacing: 5px;
-}
-
-.goback,
-.goback {
-  backface-visibility: hidden;
-  border: 1px solid rgba(#fff, 0);
-  bottom: 0px;
-  content: " ";
-  display: block;
-  margin: 0 auto;
-  position: relative;
-  transition: all 280ms ease-in-out;
-  width: 0;
-} */
-
-.donbtns {
-  width: 100%;
-
-}
-
 
 /*///////////////////////// Questions css /////////////////////////////////// */
 .question-section {
@@ -802,6 +622,15 @@ body {
   font-size: 24px;
   color: black;
   text-align: center;
+}
+
+#title:focus,
+#text-box:focus {
+  width: 82%;
+  font-size: 28px;
+  color: #2c2b2b;
+  border: solid 8px black;
+  outline: none;
 }
 
 #text-box {
