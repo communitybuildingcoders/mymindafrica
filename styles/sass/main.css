@@ -483,189 +483,207 @@ body {
   width: 100%;
 }
 
-
-/* //////////////Donations////////////// */ 
-.donation {	
-  display: flex;	
-  flex-wrap: wrap;	
-  width: 100%;	
-  margin: 0;	
-  padding: 0;	
-  box-sizing: border-box;	
-}	
-
-@media screen and (max-width: 992px) and (min-width: 400px) {	
-  .donation {	
-    flex-direction: column;	
-  }	
-}	
-
-.donationtitle {	
-  display: flex;	
-  font-family: 'Cormorant Garamond', serif;	
-  font-size: 4.5rem;	
-  color: rgba(1, 1, 1, 0.65);	
-  background-color: transparent;	
-  position: relative;	
-  top: -140%;	
-  left: 110%;	
-  bottom: 0;	
-  -webkit-transform: translateX(-50%);	
-  transform: translateX(-50%);	
-  max-width: 100%;	
-  margin-top: 10px;	
-  overflow-wrap: break-word;	
- }	
-
- @media screen and (max-width: 992px)and (min-width: 400px) {	
-   .donationtitle {	
-     width: 100%;	
-     left: 50%;	
-     top: 15%;	
-   }	
- }	
-
-.donationpara {	
-  display: flex;	
-  font-family: 'Cormorant Garamond', serif;	
-  background-color: rgba(1, 1, 1, 0.65);	
-  font-size: 1.7rem;	
-  color:white;	
-  position: relative;	
-  margin-top: 10px;	
-  -webkit-transform: translateX(-50%);	
-  transform: translateX(-50%);	
-  width: 50%;	
-  min-width: 50%;	
-  top: -140%;	
-  left: 70%;	
-  height: auto;	
-  text-align: center;	
-  overflow-wrap: break-word;	
-}	
-
-@media screen and (max-width: 992px)and (min-width: 400px){	
-  .donationpara {	
-    width: 100%;	
-    left: 50%;	
-    float: none;	
-    font-size: 1rem;	
-  }	
-}	
-
-.a {	
-  color: burlywood;	
-}	
-
-.diff {	
-  color: brown;	
-}	
-
-
-.donationimg {	
-  width: 40%;	
-  height: auto;	
-  object-fit: cover;	
-}	
-
-@media screen and (max-width: 992px) and (min-width: 400px) {	
-  .donationimg {	
-    object-fit: cover;	
-    width: 100%;	
-    padding-top: 5%;	
-    margin: 0;	
-  }	
-}	
-
-.learnmore {	
-  top: -10.5rem;	
-  left: 67%;	
-  transform: translate(-155%, -50%);	
-  border-radius: 20px;	
-  border: none;	
-  color: rgb(30, 90, 0);	
-  background-color: transparent;	
-  padding: .5vw;	
-  text-decoration: none;	
-  text-align: center;	
-  font-size: 40px;	
-  white-space: nowrap;	
-  display: flex;	
-  overflow-wrap: break-word;	
-}	
-
-.learnmore:hover,	
-.learnmore:active {	
-  letter-spacing: 5px;	
-}	
-
-.learnmore,	
-.learnmore {	
-  backface-visibility: hidden;	
-  border: 1px solid rgba(#fff, 0);	
-  bottom: 0px;	
-  content: " ";	
-  display: inline-flex;	
-  margin: 0 auto;	
-  position: relative;	
-  transition: all 280ms ease-in-out;	
-  width: 0;	
-  flex-direction: column;	
-}	
-
-@media screen and (max-width: 992px ) and (min-width: 400px) {	
-  .learnmore {	
-    top: 4rem;	
-    left: 45%;	
-    padding-top: 10px;	
-    font-size: 25px;	
-  }	
-}	
-
-
-/* 	
-.goback {	
-  top: .5rem;	
-  left: 40%;	
-  transform: translate(-155%, -50%);	
-  border-radius: 20px;	
-  border: none;	
-  color: rgb(30, 90, 0);	
-  background-color: transparent;	
-  padding: .5vw;	
-  text-decoration: none;	
-  text-align: center;	
-  font-size: 25px;	
-  white-space: nowrap;	
-}	
-.goback:hover,	
-.goback:active {	
-  letter-spacing: 5px;	
-}	
-.goback,	
-.goback {	
-  backface-visibility: hidden;	
-  border: 1px solid rgba(#fff, 0);	
-  bottom: 0px;	
-  content: " ";	
-  display: block;	
-  margin: 0 auto;	
-  position: relative;	
-  transition: all 280ms ease-in-out;	
-  width: 0;	
-} */	
-
-.donbtns {	
-  width: 100%;	
-
+/* ///////////////////////// Donations CSS //////////////////////////////////*/
+.donation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
+@media screen and (max-width: 992px) and (min-width: 400px) {
+  .donation {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 
-/* ///////////////////////// Contact Us css ///////////////////////////////// */
+.donationtitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 4.5rem;
+  color: rgba(1, 1, 1, 0.65);
+  background-color: transparent;
+  position: relative;
+  top: -180%;
+  left: 110%;
+  bottom: 0;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  max-width: 100%;
+  margin-top: 10px;
+  overflow-wrap: break-word;
+}
 
+@media screen and (max-width: 992px) and (min-width: 400px) {
+  .donationtitle {
+    width: 100%;
+    left: 50%;
+    top: 15%;
+  }
+}
 
+.donationpara {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Cormorant Garamond', serif;
+  background-color: rgba(1, 1, 1, 0.7);
+  font-size: 1.7rem;
+  color: white;
+  position: relative;
+  margin-top: 10px;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 50%;
+  min-width: 50%;
+  top: -160%;
+  left: 70%;
+  height: auto;
+  text-align: center;
+  overflow-wrap: break-word;
+}
+
+@media screen and (max-width: 992px) and (min-width: 400px) {
+  .donationpara {
+    width: 100%;
+    left: 50%;
+    float: none;
+    font-size: 1rem;
+  }
+}
+
+.a {
+  color: burlywood;
+}
+
+.diff {
+  color: brown;
+}
+
+.donationimg {
+  width: 40%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (max-width: 992px) and (min-width: 400px) {
+  .donationimg {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    padding-top: 5%;
+    margin: 0;
+  }
+}
+
+.learnmore {
+  top: -10.5rem;
+  left: 67%;
+  -webkit-transform: translate(-155%, -50%);
+          transform: translate(-155%, -50%);
+  border-radius: 20px;
+  border: none;
+  color: #1e5a00;
+  background-color: transparent;
+  padding: .5vw;
+  text-decoration: none;
+  text-align: center;
+  font-size: 40px;
+  white-space: nowrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-wrap: break-word;
+}
+
+.learnmore:hover,
+.learnmore:active {
+  letter-spacing: 5px;
+}
+
+.learnmore,
+.learnmore {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border: 1px solid rgba(255, 255, 255, 0);
+  bottom: 0px;
+  content: " ";
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0 auto;
+  position: relative;
+  -webkit-transition: all 280ms ease-in-out;
+  transition: all 280ms ease-in-out;
+  width: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (max-width: 992px) and (min-width: 400px) {
+  .learnmore {
+    top: 4rem;
+    left: 45%;
+    padding-top: 10px;
+    font-size: 25px;
+  }
+}
+
+/* 
+.goback {
+  top: .5rem;
+  left: 40%;
+  transform: translate(-155%, -50%);
+  border-radius: 20px;
+  border: none;
+  color: rgb(30, 90, 0);
+  background-color: transparent;
+  padding: .5vw;
+  text-decoration: none;
+  text-align: center;
+  font-size: 25px;
+  white-space: nowrap;
+}
+
+.goback:hover,
+.goback:active {
+  letter-spacing: 5px;
+}
+
+.goback,
+.goback {
+  backface-visibility: hidden;
+  border: 1px solid rgba(#fff, 0);
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  transition: all 280ms ease-in-out;
+  width: 0;
+} */
+.donbtns {
+  width: 100%;
+}
+
+/* //////////////////////// Contact Section css /////////////////////////////*/
 .contact-header {
   background-color: white;
+  display: -ms-grid;
   display: grid;
   float: left;
   width: 50%;
@@ -678,6 +696,7 @@ body {
     height: auto;
   }
 }
+
 .contacttitle {
   font-size: 4rem;
   color: darkgrey;
@@ -712,7 +731,7 @@ body {
   .contactimg {
     width: 100%;
     padding-left: 0;
-  } 
+  }
 }
 
 .contact-section {
@@ -755,12 +774,15 @@ body {
 }
 
 span {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .fa-facebook-square {
   font-size: 64px;
   color: #3b5998;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(20%, transparent), color-stop(20%, white), color-stop(93%, white), color-stop(93%, transparent)) url("../../assets/gray-background.jpg");
   background-image: linear-gradient(to bottom, transparent 20%, white 20%, white 93%, transparent 93%) url("../../assets/gray-background.jpg");
   padding-right: 7.5%;
   padding-left: 10%;
@@ -769,37 +791,37 @@ span {
 
 .fa-whatsapp {
   font-size: 64px;
-  color: rgb(74, 201, 89);
+  color: #4ac959;
   padding-right: 7.5%;
   background-color: transparent;
 }
 
 .fa-whatsapp:hover {
   background: transparent;
-  color: rgb(74, 201, 89);
+  color: #4ac959;
 }
 
 .fa-linkedin {
   font-size: 64px;
-  color: rgb(40, 103, 178);
+  color: #2867b2;
   padding-right: 7.5%;
   background-color: transparent;
 }
 
 .fa-twitter-square {
   font-size: 64px;
-  color: rgb(29, 161, 242);
+  color: #1da1f2;
   padding-right: 4.5%;
   background-color: transparent;
 }
 
 @media screen and (max-width: 992px) and (min-width: 400px) {
- .contactSection {
-   width: 100%;
-   height: auto;
-   text-align: center;
-   padding-top: 10%;
- }
+  .contactSection {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding-top: 10%;
+  }
 }
 
 /*///////////////////////// Questions css /////////////////////////////////// */
