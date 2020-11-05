@@ -992,25 +992,21 @@ body {
   #text-box::-webkit-input-placeholder {
     color: black;
     text-align: center;
-    padding: 15px 0;
   }
   #title:-ms-input-placeholder,
   #text-box:-ms-input-placeholder {
     color: black;
     text-align: center;
-    padding: 15px 0;
   }
   #title::-ms-input-placeholder,
   #text-box::-ms-input-placeholder {
     color: black;
     text-align: center;
-    padding: 15px 0;
   }
   #title::placeholder,
   #text-box::placeholder {
     color: black;
     text-align: center;
-    padding: 15px 0;
   }
   #title:focus,
   #text-box:focus {
