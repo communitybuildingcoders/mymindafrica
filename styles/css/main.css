@@ -297,11 +297,11 @@ body {
   background-position: center;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-columns: (1fr)[];
+  grid-template-columns: repeat(2, 1fr);
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   gap: 3rem;
 }
 
@@ -393,7 +393,7 @@ body {
   max-width: 85%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
+  -ms-grid-columns: (1fr)[];
       grid-template-columns: repeat(2, 1fr);
   gap: 4rem;
   -webkit-box-align: center;
