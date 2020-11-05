@@ -483,9 +483,8 @@ body {
   width: 100%;
 }
 
-/* ///////////////////////// Donations CSS //////////////////////////////////*/	
 
-
+//////////////Donations//////////////
 .donation {	
   display: flex;	
   flex-wrap: wrap;	
@@ -659,6 +658,148 @@ body {
 .donbtns {	
   width: 100%;	
 
+}
+
+
+/* ///////////////////////// Contact Us css ///////////////////////////////// */
+
+
+.contact-header {
+  background-color: white;
+  display: grid;
+  float: left;
+  width: 50%;
+}
+
+@media screen and (max-width: 992px) and (min-width: 400px) {
+  .contact-header {
+    width: 100%;
+    margin: 0;
+    height: auto;
+  }
+}
+.contacttitle {
+  font-size: 4rem;
+  color: darkgrey;
+  padding-top: 2%;
+  text-align: center;
+}
+
+.tact {
+  color: burlywood;
+}
+
+.us {
+  color: brown;
+}
+
+@media screen and (max-width: 992px) and (min-width: 400px) {
+  .contacttitle {
+    text-align: center;
+  }
+}
+
+.contactimg {
+  width: 100%;
+  height: auto;
+  padding-top: 2%;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 0;
+}
+
+@media screen and (max-width: 992px) and (min-width: 400px) {
+  .contactimg {
+    width: 100%;
+    padding-left: 0;
+  } 
+}
+
+.contact-section {
+  background-image: url("../../assets/gray-background.jpg");
+}
+
+.contactus {
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contactOne {
+  text-align: center;
+  padding: 1%;
+  padding-top: 1%;
+}
+
+.contactTwo {
+  text-align: center;
+  padding: 1%;
+  padding-top: 1%;
+}
+
+.contactThree {
+  text-align: center;
+  padding: 1%;
+  padding-top: 1%;
+}
+
+@media screen and (max-width: 992px) and (min-width: 400px) {
+  .contactus {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+}
+
+.contactSection {
+  padding-top: 2%;
+}
+
+span {
+  align-items: center;
+}
+
+.fa-facebook-square {
+  font-size: 64px;
+  color: #3b5998;
+  background-image: linear-gradient(to bottom, transparent 20%, white 20%, white 93%, transparent 93%) url("../../assets/gray-background.jpg");
+  padding-right: 7.5%;
+  padding-left: 10%;
+  background-color: transparent;
+}
+
+.fa-whatsapp {
+  font-size: 64px;
+  color: rgb(74, 201, 89);
+  padding-right: 7.5%;
+  background-color: transparent;
+}
+
+.fa-whatsapp:hover {
+  background: transparent;
+  color: rgb(74, 201, 89);
+}
+
+.fa-linkedin {
+  font-size: 64px;
+  color: rgb(40, 103, 178);
+  padding-right: 7.5%;
+  background-color: transparent;
+}
+
+.fa-twitter-square {
+  font-size: 64px;
+  color: rgb(29, 161, 242);
+  padding-right: 4.5%;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 992px) and (min-width: 400px) {
+ .contactSection {
+   width: 100%;
+   height: auto;
+   text-align: center;
+   padding-top: 10%;
+ }
 }
 
 /*///////////////////////// Questions css /////////////////////////////////// */
