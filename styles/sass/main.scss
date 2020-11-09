@@ -504,6 +504,14 @@ body {
   flex-flow: column wrap;
 }
 
+#form-btn:focus{
+  outline:none;
+  background-color:white;
+  color:black;
+  transform:background-color 1.5s;
+  transform: color 1.5s;
+}
+
 #form-btn:hover {
   cursor: pointer;
 }

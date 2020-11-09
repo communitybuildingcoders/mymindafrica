@@ -84,6 +84,7 @@
     margin-top: 10px;
     border: solid 4px white;
     background: transparent;
+    color:white;
   }
 
   #title::placeholder,
@@ -91,6 +92,14 @@
     color: rgb(192, 192, 192);
     text-align: center;
   }
+  #title:focus, 
+#text-box:focus{
+  width:83%;
+  font-size:24px;
+  color:rgb(209, 209, 209);
+  border:solid 4px white;;
+  outline:none;
+}
 
   #text-boxs {
     height: 25vw;
@@ -246,6 +255,7 @@
     font-size: 1rem;
     margin: auto;
     padding-bottom: 20px;
+    color:white;
   }
 
   .question-img {
@@ -265,6 +275,7 @@
     margin-top: 10px;
     border: solid 4px white;
     background: transparent;
+    color:white;
   }
 
   #title::placeholder,
@@ -272,6 +283,15 @@
     color: black;
     text-align: center;
   }
+
+   #title:focus, 
+#text-box:focus{
+  width:83%;
+  font-size:24px;
+  color:rgb(209, 209, 209);
+  border:solid 4px white;;
+  outline:none;
+}
 
   #text-boxs {
     height: 25vw;

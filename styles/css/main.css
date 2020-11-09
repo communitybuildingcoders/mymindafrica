@@ -483,7 +483,6 @@ body {
   width: 100%;
 }
 
-
 //////////////Donations//////////////
 .donation {	
   display: flex;	
@@ -978,6 +977,16 @@ span {
           flex-flow: column wrap;
 }
 
+#form-btn:focus {
+  outline: none;
+  background-color: white;
+  color: black;
+  -webkit-transform: background-color 1.5s;
+          transform: background-color 1.5s;
+  -webkit-transform: color 1.5s;
+          transform: color 1.5s;
+}
+
 #form-btn:hover {
   cursor: pointer;
 }
@@ -1089,6 +1098,7 @@ span {
     margin-top: 10px;
     border: solid 4px white;
     background: transparent;
+    color: white;
   }
   #title::-webkit-input-placeholder,
   #text-box::-webkit-input-placeholder {
@@ -1109,6 +1119,14 @@ span {
   #text-box::placeholder {
     color: silver;
     text-align: center;
+  }
+  #title:focus,
+  #text-box:focus {
+    width: 83%;
+    font-size: 24px;
+    color: #d1d1d1;
+    border: solid 4px white;
+    outline: none;
   }
   #text-boxs {
     height: 25vw;
@@ -1267,6 +1285,7 @@ span {
     font-size: 1rem;
     margin: auto;
     padding-bottom: 20px;
+    color: white;
   }
   .question-img {
     width: 90%;
@@ -1285,6 +1304,7 @@ span {
     margin-top: 10px;
     border: solid 4px white;
     background: transparent;
+    color: white;
   }
   #title::-webkit-input-placeholder,
   #text-box::-webkit-input-placeholder {
@@ -1305,6 +1325,14 @@ span {
   #text-box::placeholder {
     color: black;
     text-align: center;
+  }
+  #title:focus,
+  #text-box:focus {
+    width: 83%;
+    font-size: 24px;
+    color: #d1d1d1;
+    border: solid 4px white;
+    outline: none;
   }
   #text-boxs {
     height: 25vw;
