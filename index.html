@@ -9,55 +9,51 @@
       src="https://kit.fontawesome.com/6ee8787cf6.js"
       crossorigin="anonymous"
     ></script>
+
     <link rel="stylesheet" href="/styles/css/main.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
   </head>
   <body>
-    
     <!--  Hero Section-->
- 
+    <header>
+      <div class="container">
+        <section class="hero">
+          <div class="hero__mssg">
+            <div class="logo">
+              <img src="assets/logo.png" alt="" />
+            </div>
+            <div class="hero__mssg-details">
+              <h1>we listen. we advise. <span>we care.</span></h1>
+              <h2>mental health is not selfish</h2>
+            </div>
+            <div class="hero__mssg-ctas">
+              <a href="#services" class="cta">services</a>
+              <a href="#events" class="cta cta-dark">events</a>
+            </div>
+          </div>
+
+          <div class="hero__ctas">
+            <a href="#donations" class="cta cta-dark">donate</a>
+            <a href="#contact" class="cta">contact</a>
+          </div>
+        </section>
+      </div>
+    </header>
+
     <!-- Floating Nav -->
 
-    <!-- Social Media Section -->
-    
-    <!-- <section class='social-media'>
-        <div class='title-wrapper'>
-        <h1 class='social-media-title'>Find Us On <span>Social</span> <span>Media</span></h1>
-        <h1 class='social-media-title2'>Discover Who We Are</h1>
-        <p class='social-media-detail'>We are a non-profit organization. Looking forward to helping other fellow africans with their mental health. <br/>Find us on <span id='links-container'><a id='media-links' href="#">twitter</a>, <a id='media-links' href="facebook.com">facebook</a> or <a id='media-links' href="#">WhatsApp</a></span></p>
-        </div>
-        <div class='scl-links-wrapper'>
-            <div id='img-cell1' class='img-cell'>
-            <img class='scl-imgs' src='./assets/mindAfrica.jpg' alt='womant posing' />
-            <label class='scl-links'><a href='facebook.com'><i class="fab fa-twitter"></i></a></label>
-            </div>
-            <div id='img-cell2'  class='img-cell'>
-            <img class='scl-imgs' src='./assets/mindAfrica1.jpg' alt='womant posing' />
-            <label class='scl-links'><a href="whatsapp://send?text=The text to share"><i class="fab fa-whatsapp"></i></a></label>
-            </div>
-            <div id='img-cell3' class='img-cell'>
-            <img class='scl-imgs' src='./assets/fruitPose.jpg' alt='womant posing' />
-            <label class='scl-links'><a href='facebook.com'><i class="fab fa-facebook"></i></a></label>
-            </div>
-        </div>
-        <div class='white-wall'></div>
-    </section> -->
-
     <!-- Services Section -->
-    <section class="services">
+    <section class="services" id="services">
       <div class="services__title">
-        <h2>These are <span class="title-our">Our</span> <span class="title-services">Services</span></h2>
+        <h2>
+          These are <span class="title-our">Our</span>
+          <span class="title-services">Services</span>
+        </h2>
       </div>
-      
+
       <div class="services__graphic">
-        <img src="assets/mindAfrica2.jpg" alt="services">
+        <img src="assets/mindAfrica2.jpg" alt="services" />
       </div>
-      
+
       <div class="services__detail">
         <div class="services__item">
           <div class="services__item-number">
@@ -65,7 +61,7 @@
           </div>
           <div class="services__item-detail">
             <h4 class="one">One-on-One Counseling</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
         </div>
         <div class="services__item">
@@ -74,7 +70,7 @@
           </div>
           <div class="services__item-detail">
             <h4 class="two">Group Therapy</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
         </div>
         <div class="services__item">
@@ -83,151 +79,167 @@
           </div>
           <div class="services__item-detail">
             <h4 class="three">Community Outreach</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
         </div>
-        
-
       </div>
-
-      
     </section>
 
     <!-- Events Section -->
-    <section class="events">
+    <section class="events" id="events">
       <div class="events__header">
-        <h1>our <span> upcoming </span> <span> events </span></h1>
+        <div class="container">
+          <h1>our <span>upcoming</span> <span>events</span></h1>
+        </div>
       </div>
 
-      <div class="events__details">
-        <div class="events__list">
+      <div class="events__content">
+        <div class="events__items">
           <div class="events__item">
-            <div class="events__item-icon">
-              <i class="far fa-calendar"></i>
+            <div class="events__item-graphic">
+              <i class="far fa-calendar-alt"></i>
             </div>
-
             <div class="events__item-details">
-              <h2>our <span>first</span> <span>event</span></h2>
+              <h3>our <span>first</span> <span>event</span></h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Laudantium in inventore et a facere magnam perspiciatis rem
-                saepe perferendis suscipit.
+                Nulla a nisl urna. Mauris lorem sapien, elementum a ultrices ut,
+                ultricies eget massa.
               </p>
             </div>
           </div>
 
           <div class="events__item">
-            <div class="events__item-icon">
-              <i class="far fa-calendar"></i>
+            <div class="events__item-graphic">
+              <i class="far fa-calendar-alt"></i>
             </div>
-
             <div class="events__item-details">
-              <h2>our <span>second</span> <span>event</span></h2>
+              <h3>our <span>first</span> <span>event</span></h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Laudantium in inventore et a facere magnam perspiciatis rem
-                saepe perferendis suscipit.
+                Nulla a nisl urna. Mauris lorem sapien, elementum a ultrices ut,
+                ultricies eget massa.
               </p>
             </div>
           </div>
 
           <div class="events__item">
-            <div class="events__item-icon">
-              <i class="far fa-calendar"></i>
+            <div class="events__item-graphic">
+              <i class="far fa-calendar-alt"></i>
             </div>
-
             <div class="events__item-details">
-              <h2>our <span>third</span> <span>event</span></h2>
+              <h3>our <span>first</span> <span>event</span></h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Laudantium in inventore et a facere magnam perspiciatis rem
-                saepe perferendis suscipit.
+                Nulla a nisl urna. Mauris lorem sapien, elementum a ultrices ut,
+                ultricies eget massa.
               </p>
             </div>
           </div>
         </div>
 
         <div class="events__graphic">
-          <img src="/assets/events.png" alt="group of children gathering" />
+          <img src="assets/events.png" alt="" />
         </div>
       </div>
     </section>
 
     <!-- Donation Section-->
-    <div class="donation">
-    <img class = "donationimg" src="/assets/Coffee.png" alt="">
-    <div class="dontexts"><h1 class="donationtitle">Make <span class="a">a</span><span class="diff"> <u>difference</u>.</span></h3>
-      <h3 class="donationpara">
-        At MyMindAfrica, we strive with continuing excellence to build a better future for everyone. It's time for you to help make a difference. With any donation, you are giving hope to those who have little,
-        and changing the lives of those less fortunate. We sincerely thank you for all that you do to help us build a better tomorrow.
-      </h3></div>
-      <div class="donbtns"><button class="learnmore"><i class="fas fa-globe-africa fa-3x"></i> Learn More</button>
-      <!-- <button class="goback" id="toTop" onclick="topFunction()"><i class="fas fa-globe-africa fa-3x"></i> To the Top</button> -->
+    <section class="donation" id="donations">
+      <div class="container">
+        <div class="donation__graphic">
+          <img src="/assets//Coffee.png" alt="" />
+        </div>
+
+        <div class="donation__info">
+          <h1>Make <span>a</span> <span>Difference</span></h1>
+          <p>
+            At MyMindAfrica, we strive with continuing excellence to build a
+            better future for everyone. It's time for you to help make a
+            difference. With any donation, you are giving hope to those who have
+            little, and changing the lives of those less fortunate. We sincerely
+            thank you for all that you do to help us build a better tomorrow.
+          </p>
+          <button class="donation__cta">Learn More</button>
+        </div>
       </div>
-    
-</div>
+    </section>
 
     <!-- Newsletter Section -->
-<section class="newsletter">
+    <section class="newsletter">
+      <div class="newsletter__container">
+        <div class="newsletter__info">
+          <h2>subscribe to <span>our</span> <span> newsletter</span></h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus
+            incidunt ipsam obcaecati dolorum eveniet, sunt quisquam odit amet
+            modi quis assumenda dolore cumque provident quasi.
+          </p>
+          <form class="newsletter__form">
+            <div class="newsletter__form-group">
+              <label for="email">email</label>
+              <input
+                type="email"
+                name="email"
+                placeholder="email@example.com"
+              />
+            </div>
 
-  <div class="newsletter__container">
-
-
-    <div class="newsletter__info">
-      <h2>subscribe to <span>our</span> <span> newsletter</span></h2>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus incidunt ipsam obcaecati dolorum eveniet, sunt quisquam odit amet modi quis assumenda dolore cumque provident quasi.</p>
-      <form class="newsletter__form" >
-        <div class="newsletter__form-group">
-          <label for="email">email</label>
-          <input type="email" name="email" placeholder="email@example.com">
+            <button type="submit" class="newsletter__form-submit">
+              sign up <i class="fas fa-chevron-right"></i>
+            </button>
+          </form>
         </div>
-  
-        <button type="submit" class="newsletter__form-submit">sign up <i class="fas fa-chevron-right"></i></button>
-      </form>
-    </div>
-  
-    <div class="newsletter__graphic">
-      <img src="assets/thoughtfull.jpg" alt="young man looking into space">
-    </div>
-  </div>
-</section>
+
+        <div class="newsletter__graphic">
+          <img
+            src="assets/thoughtfull.jpg"
+            alt="young man looking into space"
+          />
+        </div>
+      </div>
+    </section>
 
     <!-- Contact Section-->
-  <div class="contact-section">
-    <div class="contact-header">
-      <h3 class="contacttitle">Con<span class="tact">tact</span><span class="us"> Us.</span></h3>
-      <img src="assets/Gathered.png" alt="Children Gathered" class="contactimg">
-    </div>
-    <div class="contactus">
-      <ul class="contactOne">
-        <h5 class="contactOneH5"><strong>Lorem ipsum dolor sit amet consectetur adipisicing elit..</strong></h5>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
-      </ul>
-      <ul class="contactTwo">
-        <h5 class="contactTwoH5"><strong>Lorem ipsum dolor sit amet consectetur adipisicing elit..</strong></h5>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
-      </ul>
-      <ul class="contactThree">
-        <h5 class="contactThreeH5"><strong>Lorem ipsum dolor sit amet consectetur adipisicing elit..</strong></h5>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
-      </ul>
-    </div>
-    <div class="contactSection">
-            <a class="afacebook" target="_blank" href="https://www.facebook.com"><i class="fab fa-facebook-square"></i></a>
-            <span>
-            <a class="awhatsapp" target="_blank" href="https://www.whatsapp.com"><i class="fab fa-whatsapp"></i></a>
-            </span>
-            <span>
-              <a class="alinkedin" target="_blank" href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a>
-            </span>
-            <span>
-              <a class="atwitter" target="_blank" href="https://www.twitter.com"><i class="fab fa-twitter-square"></i></a>
-            </span>          
-  </div>
-  
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="contact__graphic">
+          <h1>Contact <span>Us</span></h1>
+          <img src="assets/Gathered.png" alt="" />
+        </div>
+
+        <div class="contact__details">
+          <div class="contact__info">
+            <h2>Mailing Address</h2>
+            <p>123 Anywhere City, CO</p>
+          </div>
+
+          <div class="contact__info">
+            <h2>Phone Number</h2>
+            <p>(123) 456-7890</p>
+          </div>
+
+          <div class="contact__info">
+            <h2>Email Address</h2>
+            <p>email@example.com</p>
+          </div>
+
+          <div class="contact__media">
+            <a href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+
+            <a href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="#">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Question Section -->
 
-  <section class='question-section'>
+    <section class="question-section">
       <div class="header-container">
         <div class="header-wrapper">
           <h1 id="header" class="header">
@@ -236,6 +248,7 @@
           </h1>
         </div>
       </div>
+
       <div class="content-container">
         <img class="question-img" src="./assets/mindAfricaQuestions.png" />
         <div class="form-container" id="form-container">
@@ -245,17 +258,25 @@
           </p>
           <form id="form" method="POST" class="form-wrapper">
             <input id="title" name="title" type="text" placeholder="Subject" />
-            <textarea id="text-box" placeholder="Question"></textarea>
+            <textarea
+              id="text-box"
+              cols="30"
+              rows="10"
+              placeholder="Question"
+            ></textarea>
             <button id="form-btn">
-              Submit <span id="btn-arrow-hex"> &#x203A; </span>
+              Submit <i class="fas fa-chevron-right"></i>
             </button>
           </form>
         </div>
       </div>
     </section>
 
+    <!-- Footer -->
+    <footer>
+      <p>&copy; Community Building Coders 2020</p>
+    </footer>
 
-    <script src="./app.js" ></script>
-
-</body>
+    <script src="./app.js"></script>
+  </body>
 </html>
