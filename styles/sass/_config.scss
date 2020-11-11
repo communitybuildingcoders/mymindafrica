@@ -1,11 +1,45 @@
 // This file is designed to have all of the general styling such as resets, general classes, general link styling, images, etc.
 
+$light-brown: #a67f6d;
+$dark-brown: #b2633c;
+$main-gray: #fbfdfe;
+$dark-gray: #737373;
+$header-brown: #a52a2a;
+$ivory-brown: #deb887;
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+// body {
+
+// }
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url("../../assets/gray-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 img {
+  width: 100%;
   object-fit: cover;
+  display: inline-block;
+}
+
+.cta {
+  text-decoration: none;
+  border-radius: 1.5rem;
+  padding: 0.8rem 2.2rem;
+  text-transform: capitalize;
+  color: #3e3e3e;
+  background-color: #fbfdfe;
+  font-size: 1.2rem;
+  &-dark {
+    background-color: #3d5a98;
+    color: #fbfdfe;
+  }
 }
