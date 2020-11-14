@@ -364,7 +364,7 @@ header {
 
 .donationtitle {
   display: flex;
-  font-family: 'Cormorant Garamond', serif;
+  font-family: "Cormorant Garamond", serif;
   font-size: 4.5rem;
   color: rgba(1, 1, 1, 0.65);
   background-color: transparent;
@@ -379,7 +379,7 @@ header {
   overflow-wrap: break-word;
 }
 
-@media screen and (max-width: 992px)and (min-width: 400px) {
+@media screen and (max-width: 992px) and (min-width: 400px) {
   .donationtitle {
     width: 100%;
     left: 50%;
@@ -389,8 +389,8 @@ header {
 
 .donationpara {
   display: flex;
-  font-family: 'Cormorant Garamond', serif;
-  background-color: rgba(1, 1, 1, 0.70);
+  font-family: "Cormorant Garamond", serif;
+  background-color: rgba(1, 1, 1, 0.7);
   font-size: 1.7rem;
   color: white;
   position: relative;
@@ -406,7 +406,7 @@ header {
   overflow-wrap: break-word;
 }
 
-@media screen and (max-width: 992px)and (min-width: 400px) {
+@media screen and (max-width: 992px) and (min-width: 400px) {
   .donationpara {
     width: 100%;
     left: 50%;
@@ -422,7 +422,6 @@ header {
 .diff {
   color: brown;
 }
-
 
 .donationimg {
   width: 40%;
@@ -447,7 +446,7 @@ header {
   border: none;
   color: rgb(30, 90, 0);
   background-color: transparent;
-  padding: .5vw;
+  padding: 0.5vw;
   text-decoration: none;
   text-align: center;
   font-size: 40px;
@@ -483,7 +482,6 @@ header {
     font-size: 25px;
   }
 }
-
 
 /* 
 .goback {
@@ -521,7 +519,6 @@ header {
 
 .donbtns {
   width: 100%;
-
 }
 
 /* //////////////////////// Contact Section css /////////////////////////////*/
@@ -624,7 +621,14 @@ span {
 .fa-facebook-square {
   font-size: 64px;
   color: #3b5998;
-  background-image: linear-gradient(to bottom, transparent 20%, white 20%, white 93%, transparent 93%) url("../../assets/gray-background.jpg");
+  background-image: linear-gradient(
+      to bottom,
+      transparent 20%,
+      white 20%,
+      white 93%,
+      transparent 93%
+    )
+    url("../../assets/gray-background.jpg");
   padding-right: 7.5%;
   padding-left: 10%;
   background-color: transparent;
@@ -739,7 +743,7 @@ span {
 .question-img {
   width: 50%;
   height: 400px;
-=======
+}
 // Contact
 .contact {
   margin-top: 5rem;
@@ -810,7 +814,7 @@ span {
   .content-container {
     width: 90%;
     margin: 0 auto;
-    display:flex;
+    display: flex;
     gap: 3rem;
   }
 

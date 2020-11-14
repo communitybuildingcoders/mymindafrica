@@ -1,14 +1,5 @@
 {
-<<<<<<< HEAD
     "git.ignoreLimitWarning": true,
     "liveServer.settings.port": 5501
-=======
-    "liveServer.settings.port": 5501,
-    "liveSassCompile.settings.formats": [
-        {
-          "format": "expanded",
-          "savePath": "/styles/css",
-          "extensionName": ".css"
-        }]
->>>>>>> master
+
 }
