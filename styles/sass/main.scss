@@ -2,128 +2,67 @@
 
 // This will be the overall styling for desktop etc
 
-/* /////////////////////Social Media Styling ////////////// */
-body {
-  background-image: url("../../assets/gray-background.jpg");
-  background-size: cover;
+// Header
+header {
+  background-image: url("/assets/hero.jpg");
   background-repeat: no-repeat;
-}
-.social-media {
-  height: 650px;
-}
-
-.title-wrapper {
-  position: relative;
-  top: 80px;
-  margin-left: 100px;
-  padding-bottom: 20px;
-}
-.social-media-detail {
-  font-size: 2rem;
-  font-weight: 700;
-}
-
-.social-media-title {
-  font-size: 4rem;
-
-  span:first-of-type {
-    color: rgb(3, 224, 3);
-  }
-
-  span:last-of-type {
-    color: rgb(216, 43, 0);
+  background-size: 100%;
+  background-position: center;
+  .container {
+    max-width: 90%;
+    margin: 0 auto;
   }
 }
-
-.white-wall {
-  width: 100%;
-  height: 200px;
-  background-color: whitesmoke;
-  position: absolute;
-  bottom: 0;
-  margin-bottom: 100px;
-}
-
-.scl-links-wrapper {
-  width: 90%;
-  height: 300px;
-  margin-left: 100px;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-}
-
-.img-cell {
-  width: 25%;
-  height: 100%;
-  flex: 0 1 30%;
-  display: flex;
-  flex-flow: row wrap;
-  margin-top: 100px;
-  z-index: 1;
-}
-
-#links-container {
-  display: none;
-}
-
-.scl-links,
-.scl-imgs {
-  height: 90%;
-  flex: 0 1 auto;
-}
-
-.fa-facebook {
-  font-size: 3rem;
-  margin-top: -9px;
-  color: rgb(218, 218, 218);
-}
-
-.fa-twitter {
-  font-size: 3.18rem;
-  margin-top: -12px;
-  color: rgb(218, 218, 218);
-}
-
-.fa-twitter:hover {
-  background-color: transparent;
-  line-height: 38px;
-  color: rgba(233, 71, 7, 0.76);
-  transition: color 1.5s;
-  border-radius: 50%;
-}
-
-.fa-facebook:hover {
-  transition: color 1.5s;
-  color: rgb(230, 47, 30);
-  line-height: 45px;
-}
-
-.fa-whatsapp {
-  font-size: 3.12rem;
-  margin-top: -9px;
-  border-radius: 50%;
-  color: rgb(218, 218, 218);
-  background-color: rgb(34, 34, 34);
-  transition: all 2s ease;
-}
-
-.fa-whatsapp:hover {
-  color: rgb(198, 218, 221);
-  padding-top: -10px;
-  line-height: 40px;
-  background-color: rgb(206, 26, 2);
-}
-.scl-links {
-  width: 100%;
-  height: 50px;
-  text-align: center;
-  background-color: black;
-  padding: 10px;
-}
-
-.scl-imgs {
-  width: 100%;
+.hero {
+  // border: solid purple;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100vh;
+  &__mssg {
+    // border: solid green;
+    height: 80%;
+    margin: auto 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fbfdfe;
+    padding: 0.5rem 0;
+    &-details {
+      // border: solid red;
+      width: 90%;
+      margin: 0 auto;
+      h1 {
+        text-transform: uppercase;
+        font-size: 1.7rem;
+        span {
+          font-size: 4rem;
+          display: block;
+        }
+      }
+      h2 {
+        font-family: cursive;
+        font-weight: 300;
+      }
+    }
+    &-ctas {
+      // border: solid orange;
+      display: flex;
+      width: 90%;
+      margin: 0 auto;
+      justify-content: space-between;
+    }
+  }
+  &__ctas {
+    // border: solid red;
+    height: 80%;
+    margin: auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
 }
 
 // Services
@@ -152,7 +91,7 @@ body {
     padding: 40px 30px;
 
     .title-our {
-      color:#627000;
+      color: #627000;
     }
 
     .title-services {
@@ -186,13 +125,13 @@ body {
       }
 
       .two {
-        color: #6F7259;
+        color: #6f7259;
       }
 
       .three {
         color: #8d8740;
       }
-      
+
       p {
         font-size: 1.3rem;
       }
@@ -210,94 +149,125 @@ body {
 }
 
 // events
-.events__header {
-  width: 100%;
-  background-color: white;
-}
 .events {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-
-  background-position-y: 6rem;
   &__header {
-    padding: 1rem 0;
-    // border: solid red;
-    h1 {
-      text-transform: uppercase;
-      max-width: 85%;
+    background-color: #fff;
+    padding: 2.3rem 0;
+    .container {
+      max-width: 90%;
       margin: 0 auto;
-      font-size: 2.5rem;
-      color: darkgray;
+    }
+    h1 {
+      font-size: 2.7rem;
+      text-transform: capitalize;
+      color: #737373;
       span:first-of-type {
-        color: #deb887;
+        color: #b2633c;
       }
       span:last-of-type {
-        color: #c53030;
+        color: #a67f6d;
       }
     }
   }
-  &__details {
-    min-height: 90vh;
-    max-width: 80%;
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 90%;
     margin: 0 auto;
-    background-size: cover;
-    background-position: center;
+    gap: 3rem;
+  }
+  &__items {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fbfdfe;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    &-graphic {
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      i {
+        font-size: 5rem;
+      }
+    }
+    &-details {
+      // border: solid green;
+      max-width: 75%;
+      margin-left: auto;
+      h3 {
+        font-size: 1.2rem;
+        color: #fbfdfe;
+        span:first-of-type {
+          color: #b2633c;
+        }
+        span:last-of-type {
+          color: #a67f6d;
+        }
+      }
+    }
+  }
+}
+
+// Donation
+.donation {
+  margin-top: 5rem;
+  .container {
+    max-width: 90%;
+    margin: 2rem auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 3rem;
   }
-  &__list {
-    background-color: rgba(0, 0, 0, 0.6);
-    color: #fff;
+  &__info {
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding: 0.5rem 1.2rem;
+    align-items: flex-start;
+    justify-content: center;
+    h1 {
+      width: 100%;
+      font-size: 2.7rem;
+      text-transform: capitalize;
+      // font-weight: 400;
+      span {
+        &:first-of-type {
+          color: $header-brown;
+        }
+        &:last-of-type {
+          color: $ivory-brown;
+        }
+      }
+    }
+    p {
+      margin: 2rem 0;
+    }
   }
-  &__item {
+  &__cta {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    gap: 2.5rem;
-    padding-bottom: 1.5rem;
-    &:not(:last-of-type) {
-      position: relative;
+    justify-content: space-between;
+    background-color: $header-brown;
+    cursor: pointer;
+    padding: 0.5rem 1.5rem;
+    border-radius: 2rem;
+    color: #fff;
+    border: 2px solid transparent;
+    font-size: 1.2rem;
+    i {
+      margin-right: 1rem;
     }
-    &:not(:last-of-type)::after {
-      content: "";
-      position: absolute;
-      transform: translate(-50%, -50%);
-      bottom: 0;
-      left: 50%;
-      display: block;
-      margin: 0 auto;
-      width: 80%;
-      border-bottom: 2px solid brown;
-    }
-    &-icon {
-      font-size: 3.5rem;
-    }
-    &-details {
-      h2 {
-        text-transform: capitalize;
-        font-weight: 500;
-        span:first-of-type {
-          color: #deb887;
-        }
-        span:last-of-type {
-          color: #c53030;
-        }
-      }
-      p {
-        margin-top: 1rem;
-      }
-    }
-  }
-  &__graphic {
-    width: 100%;
-    img {
-      max-width: 100%;
-      display: inline-block;
+    &:hover {
+      border: 2px solid $header-brown;
+      background-color: transparent;
+      color: $header-brown;
     }
   }
 }
@@ -306,10 +276,9 @@ body {
 .newsletter {
   background-color: #0e0808;
   color: #fff;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   padding: 2rem 0 2rem 0;
   &__container {
-    max-width: 85%;
+    max-width: 90%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 4rem;
@@ -324,13 +293,13 @@ body {
     height: 100%;
     h2 {
       font-size: 4rem;
-      font-weight: 400;
+      // font-weight: 400;
       text-transform: capitalize;
       span:first-of-type {
-        color: brown;
+        color: #a52a2a;
       }
       span:last-of-type {
-        color: burlywood;
+        color: #deb887;
       }
     }
   }
@@ -770,68 +739,136 @@ span {
 .question-img {
   width: 50%;
   height: 400px;
+=======
+// Contact
+.contact {
+  margin-top: 5rem;
+  .container {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 3rem;
+  }
+  &__graphic {
+    h1 {
+      font-size: 2.7rem;
+      margin-bottom: 2rem;
+      span {
+        color: #a52a2a;
+      }
+    }
+  }
+  &__details {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__info {
+    margin: 1rem 0;
+  }
+  &__media {
+    display: flex;
+    align-items: center;
+    max-width: 33%;
+    a {
+      display: inline-block;
+      margin-right: 2rem;
+      font-size: 2rem;
+      &:first-of-type {
+        color: #00acee;
+      }
+      &:nth-of-type(2) {
+        background: -webkit-linear-gradient(
+          43deg,
+          #4158d0 0%,
+          #c850c0 46%,
+          #ffcc70 100%
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      &:last-of-type {
+        color: #3b5998;
+      }
+    }
+  }
 }
 
-#title {
-  height: 60px;
-  border: solid 6px white;
+.question-section {
+  margin-top: 5rem;
+  .header-container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 2.7rem;
+    margin-bottom: 2rem;
+  }
+  .content-container {
+    width: 90%;
+    margin: 0 auto;
+    display:flex;
+    gap: 3rem;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    form {
+      // border: solid orange;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      height: 60%;
+      margin: auto 0;
+      input {
+        font-size: 1.2rem;
+        width: 80%;
+        padding: 1rem 0.5rem;
+      }
+      textarea {
+        width: 80%;
+        margin-top: 1rem;
+        padding: 0 0.5rem;
+
+        font-size: 1.2rem;
+        resize: none;
+      }
+
+      button {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: $header-brown;
+        cursor: pointer;
+        padding: 0.5rem 1.5rem;
+        border-radius: 2rem;
+        color: #fff;
+        border: 2px solid transparent;
+        font-size: 1.2rem;
+        margin-top: 2rem;
+        i {
+          margin-left: 1rem;
+        }
+        &:hover {
+          border: 2px solid $header-brown;
+          background-color: transparent;
+          color: $header-brown;
+        }
+      }
+    }
+  }
 }
 
-
-#title,
-#text-box,
-#form-btn {
-  width: 80%;
-  align-items: center;
-  margin: auto;
-  margin-top: 10px;
-
-  background: transparent;
-}
-
-#title::placeholder,
-#text-box::placeholder {
-  margin: auto;
-  font-size: 24px;
-  color: black;
+footer {
   text-align: center;
+  margin: 5rem 0 1rem 0;
 }
 
-#title:focus, 
-#text-box:focus{
-  width:82%;
-  font-size:28px;
-  color:rgb(44, 43, 43);
-  border:solid 8px black;
-  outline:none;
-}
-
-#text-box {
-  height: 120px;
-  border: solid 6px white;
-}
-
-#form-btn {
-  width: 40%;
-  height: 40px;
-  margin: 15px 60px;
-  color: white;
-  font-weight: 700;
-  background-color: #312e2d;
-  border-radius: 30px;
-  padding: 5px 10px;
-  display: flex;
-  justify-content: space-evenly;
-  flex-flow: column wrap;
-}
-
-#form-btn:hover {
-  cursor: pointer;
-}
-
-#btn-arrow-hex {
-  font-size: 23px;
-}
+/*///////////////////////// Questions css /////////////////////////////////// */
 
 /*# sourceMappingURL=main.css.map */
 
