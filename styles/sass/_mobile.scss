@@ -43,14 +43,16 @@
   .question-img {
     margin: auto;
     margin-bottom: 10px;
-    flex-basis: 45%;
+    flex:1 0 50%;
   }
 
   .form-container {
     width: 90%;
-    height: 40%;
-    margin: 10px auto;
+    height: 10%;
+    margin:  auto;
     color: white;
+    background-image: radial-gradient(rgba(20, 20, 20, .5), rgb(0, 0, 0));
+    padding:20px;
   }
 
   .wrapper {
