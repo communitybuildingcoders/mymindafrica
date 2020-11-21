@@ -183,7 +183,7 @@ header {
     max-width: 80%;
     margin: 0 auto;
 
-    img {
+    #service-img {
       width: 100%;
     }
   }
@@ -379,7 +379,7 @@ header {
     }
   }
   &__graphic {
-    img {
+    #service-img {
       width: 100%;
     }
   }
@@ -857,6 +857,10 @@ span {
     margin: 0 auto;
     display: flex;
     gap: 3rem;
+  }
+
+  .question-img, .form-container{
+    flex:0 1 40%;
   }
 
   .form-container {
