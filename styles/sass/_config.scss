@@ -38,8 +38,13 @@ img {
   color: #3e3e3e;
   background-color: #fbfdfe;
   font-size: 1.2rem;
+  border: 3px solid transparent;
   &-dark {
-    background-color: #3d5a98;
+    background-color: $header-brown;
     color: #fbfdfe;
+    &:hover {
+      border-color: $header-brown;
+      background-color: transparent;
+    }
   }
 }
