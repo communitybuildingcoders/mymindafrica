@@ -79,7 +79,7 @@ header {
   &__toggler {
     background-color: transparent;
     font-size: 2.5rem;
-    color: #3d5a98;
+    color: $header-brown;
     border: none;
     cursor: pointer;
     &:focus {
@@ -859,8 +859,9 @@ span {
     gap: 3rem;
   }
 
-  .question-img, .form-container{
-    flex:0 1 40%;
+  .question-img,
+  .form-container {
+    flex: 0 1 40%;
   }
 
   .form-container {

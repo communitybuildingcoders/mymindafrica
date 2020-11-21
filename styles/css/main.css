@@ -25,11 +25,17 @@ img {
   color: #3e3e3e;
   background-color: #fbfdfe;
   font-size: 1.2rem;
+  border: 3px solid transparent;
 }
 
 .cta-dark {
-  background-color: #3d5a98;
+  background-color: #a52a2a;
   color: #fbfdfe;
+}
+
+.cta-dark:hover {
+  border-color: #a52a2a;
+  background-color: transparent;
 }
 
 header {
@@ -113,7 +119,7 @@ header .container {
 .main-nav__toggler {
   background-color: transparent;
   font-size: 2.5rem;
-  color: #3d5a98;
+  color: #a52a2a;
   border: none;
   cursor: pointer;
 }
@@ -906,10 +912,9 @@ span {
   gap: 3rem;
 }
 
-.question-section .question-img, .question-section .form-container {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 40%;
-          flex: 0 1 40%;
+.question-section .question-img,
+.question-section .form-container {
+  flex: 0 1 40%;
 }
 
 .question-section .form-container {
@@ -1007,10 +1012,7 @@ footer {
   .question-img {
     margin: auto;
     margin-bottom: 10px;
-    -webkit-box-flex: 1;
-        -ms-flex: 1 0 50%;
-            flex: 1 0 50%;
-    flex-basis: 45%;
+    flex: 1 0 50%;
   }
   .form-container {
     width: 90%;
