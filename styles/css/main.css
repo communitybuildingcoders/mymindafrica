@@ -52,6 +52,10 @@ header .container {
   margin: 0 auto;
 }
 
+.mobile-header {
+  display: none;
+}
+
 .hero {
   display: -ms-grid;
   display: grid;
@@ -1065,7 +1069,6 @@ span {
 
 .contact__media a:nth-of-type(2) {
   background: -webkit-linear-gradient(43deg, #4158d0 0%, #c850c0 46%, #ffcc70 100%);
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
