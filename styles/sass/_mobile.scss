@@ -16,8 +16,36 @@
 }
 
 @media (max-width: 700px) {
-  .question-section{
-    margin:auto;
+  header {
+    display: none;
+  }
+  .mobile-header {
+    display: block;
+    position: absolute;
+    img {
+      max-width: 70%;
+    }
+  }
+
+  .events {
+    &__content {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    &__item {
+      margin: 1rem 0;
+    }
+  }
+
+  .donation {
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .question-section {
+    margin: auto;
     align-content: center;
   }
   .header {
@@ -47,15 +75,15 @@
   .question-img {
     margin: auto;
     margin-bottom: 10px;
-    flex:1 1 40%;
+    flex: 1 1 40%;
   }
 
   .form-container {
     width: 90%;
-    height:20rem;
-    margin:  auto;
+    height: 20rem;
+    margin: auto;
     color: white;
-    padding:20px;
+    padding: 20px;
     background: rgba(49, 49, 49, 0.808);
   }
 
@@ -68,7 +96,7 @@
   .form-intro {
     width: 70%;
     font-size: 1rem;
-    margin:0 auto;
+    margin: 0 auto;
   }
 
   .question-img {
@@ -106,8 +134,8 @@
   }
 
   .question-section .form-container form button i {
-     margin-left: .5rem; 
-}
+    margin-left: 0.5rem;
+  }
   #text-boxs {
     height: 25vw;
   }
