@@ -619,9 +619,7 @@ header {
   }
 }
 
-.contact-section {
-  background-image: url("../../assets/gray-background.jpg");
-}
+
 
 .contactus {
   font-size: 20px;
@@ -715,10 +713,8 @@ span {
 
 /*///////////////////////// Questions css /////////////////////////////////// */
 .question-section {
-  background-image: url("../../assets/gray-background.jpg");
   background-size: cover;
   width: 100%;
-  height: 800px;
   margin-top: 250px;
 }
 
@@ -740,8 +736,6 @@ span {
 
 .header-container {
   width: 100%;
-  height: 150px;
-  background-color: white;
   display: flex;
   justify-content: flex-end;
 }
@@ -756,11 +750,12 @@ span {
 .content-container .form-container,
 .question-img {
   margin: auto;
-  flex-basis: 45%;
+  flex:1 0 60%;
 }
 
+
+
 .form-container {
-  width: 50%;
   height: 30%;
   color: black;
   font-size: 24px;
@@ -774,14 +769,22 @@ span {
   flex-flow: column wrap;
   margin: auto 0;
   height: 10%;
+  width: 100%;
+  margin-top:5px;
+  margin-bottom:10px;
+}
+
+#title, #text-box{
+  width:100%;
+  border-radius: 10px;
 }
 
 .form-intro {
-  width: 50%;
-
+  width: 100%;
   font-size: 1rem;
   margin: auto;
   padding-bottom: 20px;
+  text-align:center;
 }
 
 .question-img {
@@ -859,7 +862,7 @@ span {
     width: 90%;
     margin: 0 auto;
     display: flex;
-    gap: 3rem;
+    gap: 2rem;
   }
 
   .question-img,
@@ -876,7 +879,6 @@ span {
       flex-direction: column;
       align-items: flex-start;
       height: 60%;
-      margin: auto 0;
       input {
         font-size: 1.2rem;
         width: 80%;

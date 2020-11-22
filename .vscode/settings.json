@@ -1,6 +1,6 @@
 {
     "git.ignoreLimitWarning": true,
-    "liveServer.settings.port": 5501,
+    "liveServer.settings.port": 5503,
     "liveSassCompile.settings.formats": [
         {
           "format": "expanded",
