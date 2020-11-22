@@ -50,6 +50,10 @@ header .container {
   margin: 0 auto;
 }
 
+.mobile-header {
+  display: none;
+}
+
 .hero {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -883,7 +887,6 @@ span {
 
 .contact__media a:nth-of-type(2) {
   background: -webkit-linear-gradient(43deg, #4158d0 0%, #c850c0 46%, #ffcc70 100%);
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -987,6 +990,27 @@ footer {
 }
 
 @media (max-width: 700px) {
+  header {
+    display: none;
+  }
+  .mobile-header {
+    display: block;
+    position: absolute;
+  }
+  .mobile-header img {
+    max-width: 70%;
+  }
+  .events__content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .events__item {
+    margin: 1rem 0;
+  }
+  .donation .container {
+    display: flex;
+    flex-direction: column;
+  }
   .header {
     color: black;
     font-size: 1.8rem;
