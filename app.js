@@ -20,15 +20,15 @@ const formData = {
 const onResize = () => {
   const newWidth = (width.textContent = window.innerWidth);
 
-  if (newWidth > 1030) {
-    formContainer.style.background = "transparent";
-  } else if (newWidth > 1024) {
-    formContainer.style.background =
-      "radial-gradient(rgba(60, 60, 60, .2), rgba(40, 40, 40, .7))";
-  } else if (newWidth < 1024) {
-    formContainer.style.background =
-      "radial-gradient(rgba(20, 20, 20, .5), rgb(0, 0, 0))";
-  }
+  // if (newWidth > 1030) {
+  //   formContainer.style.background = "transparent";
+  // } else if (newWidth > 1024) {
+  //   formContainer.style.background =
+  //     "radial-gradient(rgba(60, 60, 60, .2), rgba(40, 40, 40, .7))";
+  // } else if (newWidth < 1024) {
+  //   formContainer.style.background =
+  //     "radial-gradient(rgba(20, 20, 20, .5), rgb(0, 0, 0))";
+  // }
 };
 window.addEventListener("resize", onResize);
 
@@ -52,7 +52,7 @@ document.getElementById("form-btn").addEventListener("click", () => {
     .getElementById("form")
     .setAttribute(
       "action",
-      "mailto:varcodesmitty@gmail.com?subject=" +
+      "mailto:adlerluders@outlook.com?subject=" +
         message.subject +
         "&body=" +
         message.content
