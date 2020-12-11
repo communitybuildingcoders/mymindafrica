@@ -27,7 +27,7 @@ document.getElementById("form-btn").addEventListener("click", () => {
     .getElementById("form")
     .setAttribute(
       "action",
-      "mailto:smithemily1126@yahoo.com?subject=" +
+      "mailto:insertEmailHere@email" +
         message.subject +
         "&body=" +
         message.content
